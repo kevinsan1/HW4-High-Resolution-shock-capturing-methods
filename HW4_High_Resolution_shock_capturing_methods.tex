@@ -3,7 +3,12 @@
 % (fold)
 \usepackage{booktabs,amsmath,multirow} 
 \usepackage{mathtools} % needed for next line
-\mathtoolsset{showonlyrefs} % only shows number of referenced equations
+\mathtoolsset{showonlyrefs} 
+\usepackage{fullpage}
+\usepackage{calc}
+\newcommand{\explain}[2]{\underbrace{#1}_{\parbox{\widthof{#1}}{\footnotesize\raggedright #2}}}
+
+% only shows number of referenced equations
 % \newcommand{\dpder}[3][]{\dfrac{\partial^{#1}#2}{\partial #3}} \addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in} \addtolength{\textwidth}{1.75in}
 % \addtolength{\topmargin}{-.875in} \addtolength{\textheight}{1.75in}
 
@@ -43,7 +48,7 @@
 % above is the preamble (end)
 \def\MyWidth{0.71\textwidth} % textwidth for multiple graphs
 \begin{document} 
-\title{Project 1, Loudspeaker Modeling} 
+\title{Homework 4, High-resolution shock-capturing methods} 
 \author{Kevin Mead}
 
 %\affiliation{KTH Royal Institute of Technology, Electrotechnical Modelling} \email{kmead@kth.se}

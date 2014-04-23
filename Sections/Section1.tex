@@ -3,25 +3,94 @@
 % (fold)
 \label{sec:shallow_water_with_non_horizontal_bottom}
 
-The shalow water model of HW2 is now extended to a non-horizontal bottom ``bathymetry'' ${B(x)}$.
+The shallow water model of HW2 is now extended to a non-horizontal bottom ``bathymetry'' ${B(x)}$. 
+\begin{align}
+	\begin{pmatrix}
+		h_t\\
+		hu_t 
+	\end{pmatrix}
+	+ 
+	\begin{pmatrix}
+		h_x u + h u_x\\h u u_x + gh( h_x + B_x ) 
+	\end{pmatrix}
+	= 
+	\begin{pmatrix}
+		0\\
+		0 
+	\end{pmatrix}
+	\label{eq:originalEquation} 
+\end{align}
+\begin{description}
+	\item[a)] Show that still water ($u=0$) must have, as it should, a horizontal water level. 
+	
+	If $u=0$ for all space and time, then $u_t$ and $u_x$ are also zero. Equation~\eqref{eq:originalEquation} becomes 
+	\begin{equation}
+		\begin{pmatrix}
+			h_t\\0 
+		\end{pmatrix}
+		+ 
+		\begin{pmatrix}
+			0\\gh( h_x + B_x ) 
+		\end{pmatrix}
+		= 
+		\begin{pmatrix}
+			0\\0 
+		\end{pmatrix}
+		\label{eq:equationIfUiszero} 
+	\end{equation}
+	This means that $h_t=0$ and $h_x=-B_x$. We know that $B(x)_t=0$ because it isn't a function of time. The total height, $D(x,t)$, is $D(x,t) = h(x,t) + B(x)$. A horizontal water level means that $D(x,t) = \text{constant}$ and $D(x,t)_x=D(x,t)_t=0$. Equation~\eqref{eq:proveHorizontalWaterlevel} shows that derivatives with respect to $x$ and $t$ are zero and therefore showing that the total height $D(x,t)$ is constant. 
+	\begin{align}
+		D(x,t)_x &= h_x + B_x = h_x + (-h_x) = 0\\
+		D(x,t)_t &= h_t + B_t = 0 + 0 = 0 \label{eq:proveHorizontalWaterlevel} 
+	\end{align}
+	
+	\item[b)] Write the equation in conservation form for $h$ and $m=hu$. 
+	\begin{equation}
+		\begin{pmatrix}
+			h\\m 
+		\end{pmatrix}
+		_t + 
+		\begin{pmatrix}
+			m\\f_2(h,m) 
+		\end{pmatrix}
+		_x = 
+		\begin{pmatrix}
+			0\\s(h,m,x) 
+		\end{pmatrix}
+		\label{eq:proveThisEquation} 
+	\end{equation} % (eq:proveThisEquation)
+	The first equation in Equation~\eqref{eq:proveThisEquation} is proved using the product rule, $m_x = h_x u + h u_x$. The second equation needs to be written out explicitly and solved for the unknowns. Substituting $m_t = h_t u + h u_t$ into Equation~\eqref{eq:proveThisEquation} 
+	\begin{align}
+		(h_t u + h u_t) + [h u u_x + gh( h_x + B_x )] = h_t u  \label{eq:firstToConservation} 
+	\end{align}
+	
+	% (eq:firsttoconservation)
+	and substituting $u=m/h$ and $h_t=-m_x$ 
+	\begin{equation}
+		m_t + [h \left(\frac{m}{h}\right) \left(\frac{m}{h}\right)_x + gh( h_x + B_x )] = (-m_x) \left(\frac{m}{h}\right) \label{eq:secondtoConservation} 
+	\end{equation}
+	
+	% (eq:secondtoconservation)
+	and bringing x and t derivatives together and putting derivatives other than $h$ or $m$ to the source function 
+	\begin{align}
+		m_t + [\underbrace{m \left(\frac{m}{h}\right)_x + m_x \left(\frac{m}{h}\right)}_{(m^2/h)_x} + \underbrace{gh h_x}_{(gh^2/2)_x}] &= -gh B_x \label{eq:thirdConservation} \\
+			m_t + (\underbrace{\frac{m^2}{h} + \frac{gh^2}{2}}_{f_2(h,m)})_x &= \underbrace{-gh B_x}_{s(h,m,x)}\label{eq:fourthConservation}
+	\end{align} % (eq:thirdconservation)
+	Equation~\eqref{eq:proveThisEquation} written in conservation form becomes,
 \begin{equation}
 	\begin{pmatrix}
 		h\\m 
 	\end{pmatrix}
 	_t + 
 	\begin{pmatrix}
-		m\\f_2(h,m) 
+		m\\\frac{m^2}{h} + \frac{gh^2}{2} 
 	\end{pmatrix}
-	_x =
+	_x = 
 	\begin{pmatrix}
-		0\\0 
-	\end{pmatrix}
-	\label{eq:1} 
-\end{equation}
-
-\begin{description}
-	\item[a)] Show that still water (u=0) must have, as it should, a horizontal water level.
-	\item[b)] Write the equation in conservation form for $h$ and $m=hu$.
+		0\\ \frac{gh^2}{2}
+	\end{pmatrix}_x
+	\label{eq:proveThisEquationSolved}
+\end{equation} % (eq:provethisequationsolved)
 \end{description}
 
 % section shallow_water_with_non_horizontal_bottom (end)

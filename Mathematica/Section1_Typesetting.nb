@@ -10,17 +10,43 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[       775,         34]
-NotebookOptionsPosition[       560,         21]
-NotebookOutlinePosition[       914,         37]
-CellTagsIndexPosition[       871,         34]
+NotebookDataLength[      1423,         61]
+NotebookOptionsPosition[      1142,         46]
+NotebookOutlinePosition[      1526,         63]
+CellTagsIndexPosition[      1483,         60]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox[
+    RowBox[{"(", GridBox[{
+       {"h"},
+       {"m"}
+      }], ")"}], "t"], "+", 
+   SubscriptBox[
+    RowBox[{"(", GridBox[{
+       {"m"},
+       {
+        RowBox[{
+         SubscriptBox["f", "2"], 
+         RowBox[{"(", 
+          RowBox[{"h", ",", "m"}], ")"}]}]}
+      }], ")"}], "x"]}], "=", 
+  RowBox[{"(", GridBox[{
+     {"0"},
+     {
+      RowBox[{"s", 
+       RowBox[{"(", 
+        RowBox[{"h", ",", "m", ",", "x"}], ")"}]}]}
+    }], ")"}]}]], "Input",
+ CellChangeTimes->{{3.6072673280318403`*^9, 3.60726740684184*^9}}]
 },
 WindowSize->{740, 583},
 WindowMargins->{{4, Automatic}, {Automatic, 4}},
+Magnification:>1.5 Inherited,
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
 2013)",
 StyleDefinitions->"Default.nb"
@@ -36,9 +62,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[557, 20, 581, 24, 67, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
