@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+
+% (fold)
+\usepackage{booktabs,amsmath,multirow} 
+\usepackage{mathtools} % needed for next line
+\mathtoolsset{showonlyrefs} % only shows number of referenced equations
+% \newcommand{\dpder}[3][]{\dfrac{\partial^{#1}#2}{\partial #3}} \addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in} \addtolength{\textwidth}{1.75in}
+% \addtolength{\topmargin}{-.875in} \addtolength{\textheight}{1.75in}
+
+% need for subequations
+\usepackage{graphicx} 
+
+% need for figures
+\usepackage{verbatim}
+
+% useful for program l,istings
+\usepackage{color} 
+
+% use if color is used in text
+\usepackage{subfigure}
+
+% use for side-by-side figures
+\usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true, bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false, colorlinks,linkcolor={blue},citecolor={blue},urlcolor={red}, pdfstartview={FitV},unicode,breaklinks=true]{hyperref} 
+
+% use for hypertext links, including those to external documents and URLs
+\newcommand{\ajp}{AJP} 
+\newcommand{\ig}{ 
+\includegraphics} 
+\newcommand{\tu}{\textup} \hypersetup{urlcolor=blue, colorlinks=true} 
+
+% Colors hyperlinks in blue - change to black if annoying
+% don't need the following. simply use defaults
+\setlength{\baselineskip}{16.0pt} 
+
+% 16 pt usual spacing between lines
+\begin{comment}
+	\pagestyle{empty} 
+	
+	% use if page numbers not wanted
+\end{comment}
+
+% Specifies the directory where pictures are stored
+% above is the preamble (end)
+\def\MyWidth{0.71\textwidth} % textwidth for multiple graphs
+\begin{document} 
+\title{Project 1, Loudspeaker Modeling} 
+\author{Kevin Mead}
+
+%\affiliation{KTH Royal Institute of Technology, Electrotechnical Modelling} \email{kmead@kth.se}
+\date{\today} 
+\maketitle 
+\input{./Sections/Section1}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{My_Book}
+%\noindent Updated \today.} 
+\end{document} 
