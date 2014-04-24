@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex HW4_High_Resolution_shock_capturing_methods"] 1398285258 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1398285259
+["bibtex HW4_High_Resolution_shock_capturing_methods"] 1398345443 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1398345443
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "HW4_High_Resolution_shock_capturing_methods.aux" 1398285258 1763 894bc3f2d92f46187ab26bd64150a1c6 ""
+  "HW4_High_Resolution_shock_capturing_methods.aux" 1398345431 1997 fa0dd88fa0183c6c4b142589e55b92f1 ""
   "HW4_High_Resolution_shock_capturing_methods.bcf" 0 -1 0 ""
   "My_Book.bib" 0 -1 0 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.bbl"
   "HW4_High_Resolution_shock_capturing_methods.blg"
-["pdflatex"] 1398285258 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1398285259
+["pdflatex"] 1398345431 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1398345443
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -84,11 +84,11 @@
   "/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1369923225 1072746 3ce1f23f203cb4a0015ca3c8411dee4a ""
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1369923264 3827029 ad4432546849f432c3154779662c76c8 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
-  "HW4_High_Resolution_shock_capturing_methods.aux" 1398285258 1763 894bc3f2d92f46187ab26bd64150a1c6 ""
+  "HW4_High_Resolution_shock_capturing_methods.aux" 1398345431 1997 fa0dd88fa0183c6c4b142589e55b92f1 ""
   "HW4_High_Resolution_shock_capturing_methods.bbl" 0 -1 0 "bibtex HW4_High_Resolution_shock_capturing_methods"
-  "HW4_High_Resolution_shock_capturing_methods.out" 1398285258 268 9c98b9aa63c7f8e39459290e0d056a9e ""
-  "HW4_High_Resolution_shock_capturing_methods.tex" 1398284912 1923 e88887fe773843837e829830a1a271ca ""
-  "Sections/Section1.tex" 1398285252 2871 fc23c7e1084055cc037a1f6d570618b9 ""
+  "HW4_High_Resolution_shock_capturing_methods.out" 1398345431 268 9c98b9aa63c7f8e39459290e0d056a9e ""
+  "HW4_High_Resolution_shock_capturing_methods.tex" 1398341585 2037 974b58bcf7be3953d5476d06fe3f9d30 ""
+  "Sections/Section1.tex" 1398286562 3377 95fdf270bb39e4a48b4a55d2785748a2 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.out"
   "HW4_High_Resolution_shock_capturing_methods.log"
