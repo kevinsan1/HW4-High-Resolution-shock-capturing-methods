@@ -20,7 +20,7 @@ i = 1:N;
 w = 0.1*L; % Width
 x = (i-1/2)*dx; % Grid points
 a = 1/5*H;
-h = H + a*exp(-x.^2/(w^2));
+h = H + a*exp(-(x-L/2).^2/(w^2));
 m = zeros(1,N);
 % Reflection Boundary Conditions
 ip = i+1;
@@ -47,7 +47,8 @@ figure(1); clf;
 plot(x,hplot(:,1),'-',x,h,'--');
 legend('t=0  ','t=1');
 xlabel('x');  ylabel('h(x,t)');
-title(sprintf('$h(x,t)$ $\\Delta t=$%0.2g, $\\epsilon =$ %g',tau,a),...
+title(sprintf('$h(x,t)$ $\\Delta t=$%0.2g,',...
+    ' $\\epsilon =$ %g',tau,a),...
     'Interpreter','latex')
 %% h plot
 figure(2)
@@ -70,7 +71,8 @@ end
 %%
 printYesNo = 0;
 if printYesNo == 1
-    saveFigurePath = '/Users/kevin/SkyDrive/KTH Work/LaTeX Reports/Stability HW3/Figures/';
+    saveFigurePath = sprintf('/Users/kevin/SkyDrive/KTH Work',...
+        '/LaTeX Reports/Stability HW3/Figures/');
     set(figure(1), 'PaperPositionMode', 'auto');
     print('-depsc2', [saveFigurePath ...
         sprintf('plot1%g',floor(tau^-1))]);
