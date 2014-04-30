@@ -6,14 +6,14 @@ addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
     '/HW4-High Resolution shock-capturing methods/matlabfiles/']);
 
 %% Parameters
-N = 100;
+N = 200;
 L = 1.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
-c = g; % Wave speed
+c = g*sqrt(H+.2); % Wave speed
 tau = .5*dx/g; % Time Step
-coeff = -tau/(2*dx);
+coeff = -c*tau/(2*dx);
 nStep = 2*L/(c*tau);
 nCells = 1:N;
 ghostCellOneSide = 2;
@@ -25,7 +25,7 @@ a = 1/5*H;
 h = H + a*exp(-(x-L/2).^2/(w^2));
 % Boundary Conditions
 h = padarray(h',ghostCellOneSide)';
-m = zeros(1,length(h));
+m = g*sqrt(h);
 %% BC
 % needs to be changed if ghostCellOneSide is changed
 h(1) = h(4);
