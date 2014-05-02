@@ -21,11 +21,11 @@ k_wave = pi/sigma;        % Wave number of the cosine
 x = ((1:N)-1/2)*dx;  % Coordinates of grid points
 % Initial condition is a Gaussian-cosine pulse
 h = H + a*exp(-(x-L/2).^2/(2*sigma^2)); 
-m = -sqrt(h);
+m = c*ones(1,N);
 flux = 1/2*g*h.^2 + m.^2/h;
 % Use periodic boundary conditions
-ip = (3:(N-2))+1;  %ip(N) = N-1;   % ip = i+1 with periodic b.c.
-im = (3:(N-2))-1; % im(1) = 2;   % im = i-1 with periodic b.c.
+ip = (2:(N-1))+1;  %ip(N) = N-1;   % ip = i+1 with periodic b.c.
+im = (2:(N-1))-1; % im(1) = 2;   % im = i-1 with periodic b.c.
 
 %% * Initialize plotting variables.
 iplot = 1;          % Plot counter
@@ -37,27 +37,15 @@ plotStep = nStep/nplots; % Number of steps between plots
 
 %% * Loop over desired number of steps.
 for iStep=1:nStep  %% MAIN LOOP %%
-    h(1) = h(4);
-    m(1) = -m(4);
-    h(2) = h(3);
-    m(2) = -m(3);
-    h(N) = h(N-3);
-    m(N) = -m(N-3);
-    h(N-1) = h(N-2);
-    m(N-1) = -m(N-2);
+    h(1) = h(2);
+    m(1) = -m(2);
+    h(N) = h(N-1);
+    m(N) = -m(N-1);
     hOld = h;
     mOld = m;
-    m(3:(N-2)) = .5*(mOld(ip)+mOld(im)) + -tau/(2*dx)*(flux(ip)-flux(im));
-    h(3:(N-2)) = .5*(hOld(ip)+hOld(im)) + -tau/(2*dx)*(mOld(ip)-mOld(im));
+    m(2:(N-1)) = .5*(mOld(ip)+mOld(im)) + -tau/(2*dx)*(flux(ip)-flux(im));
+    h(2:(N-1)) = .5*(hOld(ip)+hOld(im)) + -tau/(2*dx)*(mOld(ip)-mOld(im));
     flux = 1/2*g*h.^2 + m.^2/h;
-    h(1) = h(4);
-    m(1) = -m(4);
-    h(2) = h(3);
-    m(2) = -m(3);
-    h(N) = h(N-3);
-    m(N) = -m(N-3);
-    h(N-1) = h(N-2);
-    m(N-1) = -m(N-2);
   %* Periodically record a(t) for plotting.
   if( rem(iStep,plotStep) < 1 )  % Every plot_iter steps record 
     iplot = iplot+1;
