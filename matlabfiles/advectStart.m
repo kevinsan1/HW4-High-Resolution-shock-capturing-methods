@@ -6,12 +6,12 @@ addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
     '/HW4-High Resolution shock-capturing methods/matlabfiles/']);
 
 %% Parameters
-N = 200;
+N = 10;
 L = 1.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
-c = g*sqrt(H+.2); % Wave speed
+c = g*sqrt(H); % Wave speed
 tau = .5*dx/g; % Time Step
 coeff = -c*tau/(2*dx);
 nStep = 2*L/(c*tau);
@@ -23,9 +23,9 @@ w = 0.1*L; % Width
 x = (nCells-1/2)*dx; % Grid points
 a = 1/5*H;
 h = H + a*exp(-(x-L/2).^2/(w^2));
-% Boundary Conditions
 h = padarray(h',ghostCellOneSide)';
-m = g*sqrt(h);
+% Boundary Conditions
+m = g*sqrt(h)*0;
 %% BC
 % needs to be changed if ghostCellOneSide is changed
 h(1) = h(4);
@@ -71,7 +71,7 @@ end
 % title(sprintf('$h(x,t)$ $\\Delta t=$%0.2g,',...
 %     ' $\\epsilon =$ %g',tau,a),...
 %     'Interpreter','latex')
-%% h plot
+%% h plot1
 figure(2)
 for ip = 1:2:nStep
     clf;
