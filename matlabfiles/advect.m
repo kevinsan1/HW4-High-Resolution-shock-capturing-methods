@@ -7,18 +7,22 @@ clear all;  help advect;  % Clear memory and print header
 N = 100
 L = 1.;     % System size
 H = 1;
+g = 9.8;
 dx = L/N;    % Grid spacing
-c = 1;      % Wave speed
+a = 0.1;
+c = g*sqrt(H+a);      % Wave speed
 tau = dx/c;
-coeff = -c*tau/(2.*dx);  % Coefficient used by all schemes
-nStep = L/(c*tau);
+% coeff = -c*tau/(2.*dx);  % Coefficient used by all schemes
+nStep = 3*L/(c*tau);
 
 %% * Set initial and boundary conditions.
 sigma = 0.1;              % Width of the Gaussian pulse
 k_wave = pi/sigma;        % Wave number of the cosine
-x = ((1:N)-1/2)*dx - L/2;  % Coordinates of grid points
+x = ((1:N)-1/2)*dx;  % Coordinates of grid points
 % Initial condition is a Gaussian-cosine pulse
-h = H + exp(-x.^2/(2*sigma^2)); 
+h = H + a*exp(-(x-L/2).^2/(2*sigma^2)); 
+m = g*ones(1,length(h));
+flux = 1/2*g*h.^2 + m.^2/h;
 % Use periodic boundary conditions
 ip(1:(N-1)) = 2:N;  ip(N) = 1;   % ip = i+1 with periodic b.c.
 im(2:N) = 1:(N-1);  im(1) = N;   % im = i-1 with periodic b.c.
@@ -32,7 +36,11 @@ plotStep = nStep/nplots; % Number of steps between plots
 
 %% * Loop over desired number of steps.
 for iStep=1:nStep  %% MAIN LOOP %%
-    h(1:N) = .5*(h(ip)+h(im)) + coeff*(h(ip)-h(im));
+    hOld = h;
+    mOld = m;
+    m(1:N) = .5*(mOld(ip)+mOld(im)) + -tau/(2*dx)*(flux(ip)-flux(im));
+    h(1:N) = .5*(hOld(ip)+hOld(im)) + -tau/(2*dx)*(mOld(ip)-mOld(im));
+    flux = 1/2*g*h.^2 + m.^2/h;
   %* Periodically record a(t) for plotting.
   if( rem(iStep,plotStep) < 1 )  % Every plot_iter steps record 
     iplot = iplot+1;
@@ -58,7 +66,7 @@ view([-70 50]);  % Better view from this angle
 %% Plot
 figure(3); clf
 for i = 1:nplots
-   plot(x,hplot(:,i),'-',x,h,'--');
-   pause(0.2);
    clf;
+   plot(x,hplot(:,i),'-',x,h,'--');
+   pause(0.1);
 end
