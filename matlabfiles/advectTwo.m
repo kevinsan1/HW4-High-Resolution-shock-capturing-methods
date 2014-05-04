@@ -16,7 +16,7 @@ i = 1:N;
 w = 0.4;              % Width
 x = (i-1/2)*dx;    % Grid points
 h = H + .1*exp(-(x-L/2).^2/(w^2));
-m = h*c*tau;
+m = zeros(1,length(h));
 % Reflection Boundary Conditions
 ip = i+1;
 ip(N) = 1;
@@ -39,18 +39,26 @@ end
 
 %% Plot
 figure(1); clf;
-plot(x,hplot(:,1),'-',x,h,'--');
-legend('t=0  ','t=1');
+plot(x,mplot(:,1),'-',x,m,'--');
+legend('t=0','t=1');
 xlabel('x');  ylabel('h(x,t)');
 title(sprintf('$h(x,t)$'),...
     'Interpreter','latex')
 %%
-figure(2)
-
+% figure(2)
+% for ip = 1:4:nStep
+%     plot(x,hplot(:,1))
+%     hold on;
+%     plot(x,hplot(:,ip),'-');
+%     pause(.3)
+%     clf
+% end
+%%
 for ip = 1:4:nStep
-    plot(x,hplot(:,1))
+    figure(3)
+    plot(x,mplot(:,1))
     hold on;
-    plot(x,hplot(:,ip),'-');
+    plot(x,mplot(:,ip),'-');
     pause(.3)
     clf
 end

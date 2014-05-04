@@ -75,9 +75,9 @@ end
 figure(2)
 for ip = 1:2:nStep
     clf;
-    plot(x,hplot((3:(N+2)),1))
+    plot(x,mplot((3:(N+2)),1))
     hold on;
-    plot(x,hplot((3:(N+2)),ip),'-');
+    plot(x,mplot((3:(N+2)),ip),'-');
     pause(.1)
 end
 %% m plot
