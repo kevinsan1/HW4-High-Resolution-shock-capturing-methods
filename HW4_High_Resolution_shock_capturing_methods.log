@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 16:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,7 +557,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
 Here is how much of TeX's memory you used:
  9910 strings out of 493315
  141240 string characters out of 6137904
- 219194 words of memory out of 5000000
+ 219211 words of memory out of 5000000
  13252 multiletter control sequences out of 15000+600000
  8716 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -577,7 +577,7 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on HW4_High_Resolution_shock_capturing_methods.pdf (3 pages, 173
-266 bytes).
+516 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams

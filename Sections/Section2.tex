@@ -10,7 +10,7 @@
 	\begin{enumerate}
 		\item Explain how to choose m(x,0), to make a single pulse (not two!) based on the linearized problem. 
 		
-		You can make it a single pulse by giving the wave an initial speed proportional to its height in one direction. Since $m=hv$, we can set m to $hc$, where $c=\sqrt(gH)$, and $H=0$ since we want a linearized approximation.
+		You can make it a single pulse by giving the wave an initial speed proportional to its height in one direction. Since $m=hv$, we can set m to $hc$, where the characteristic speed is $c=\sqrt{gH}$, and $H=0$ since we want a linearized approximation.
 		
 		\item Use this initial data and run the Roe solver with n=80, 160, 320 and the CFL number as large as possible without instability, until the wave has been fully reflected at L. Plot the wave shapes. 
 		
@@ -45,7 +45,7 @@
 			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_160_a_2.eps}} \label{fig:Figures_plot2p1_n_is_160_a_2}
 			\subfigure[$N=320$ \label{fig:Figures_plot2p1_n_is_320_a_2}]{
 			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_320_a_2.eps}}
-			\caption{These are the plots with different N values.  The CFL condition was set to 40\% of the value that would be ideal for a linear problem. The wave edges get sharper when $N$ is increased, but changing the value of $a$ has also changed the overall speed and shape of the wave after it recombines with its small wave that moves leftward.} 
+			\caption{These are the plots with different N values.  The CFL condition was set to 40\% of the value that would be ideal for a linear problem. The wave edges get sharper when $N$ is increased, but changing the value of $a$ has also changed the characteristic speed and shape of the wave after it recombines with its small wave that moves leftward.} 
 			\label{fig:Figure21d}
 		\end{figure}
 		
