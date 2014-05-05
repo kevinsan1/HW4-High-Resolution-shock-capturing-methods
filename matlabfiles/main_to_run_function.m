@@ -1,5 +1,5 @@
 H = 1;
-print=0;
+print=1;
 a = 2*H;
 advectStartFunction( 80 , 	print , H , a)
 %%

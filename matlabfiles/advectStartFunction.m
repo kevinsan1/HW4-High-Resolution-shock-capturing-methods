@@ -17,7 +17,7 @@ dx = L/N; % Grid spacing
 % H = 1;
 g = 9.8;
 c = sqrt(g*H); % Wave speed
-tau = .8*dx/c; % Time Step
+tau = .4*dx/c; % Time Step
 coeff = -tau/(2*dx);
 nStep = .8*L/(c*tau);
 finalTime = nStep*tau;
@@ -114,7 +114,7 @@ if printYesNo == 1
         'methods/Figures/'];
     set(figure(1), 'PaperPositionMode', 'auto');
     print('-depsc2', [saveFigurePath ...
-        sprintf('plot2p%g_n_is_%g',H,N)]);
+        sprintf('plot2p%g_n_is_%g_a_%g',H,N,a)]);
 end
 end
 

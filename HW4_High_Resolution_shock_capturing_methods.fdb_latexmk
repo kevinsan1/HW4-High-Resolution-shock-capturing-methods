@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex HW4_High_Resolution_shock_capturing_methods"] 1399300219 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1399300221
+["bibtex HW4_High_Resolution_shock_capturing_methods"] 1399301121 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1399301125
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "HW4_High_Resolution_shock_capturing_methods.aux" 1399300220 4953 e13fa9046ba4a191509c5226bfdc4ae8 ""
+  "HW4_High_Resolution_shock_capturing_methods.aux" 1399301123 5313 2259ec5de26b2b2e5d49c4de255862bc ""
   "HW4_High_Resolution_shock_capturing_methods.bcf" 0 -1 0 ""
   "My_Book.bib" 0 -1 0 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.bbl"
   "HW4_High_Resolution_shock_capturing_methods.blg"
-["pdflatex"] 1399300219 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1399300221
+["pdflatex"] 1399301121 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1399301125
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -88,20 +88,22 @@
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
   "Figures/plot2p1_n_is_160-eps-converted-to.pdf" 1399300159 7520 0fda2fa69ad486de841ba2d76853e6d4 ""
   "Figures/plot2p1_n_is_160.eps" 1399300040 10990 177fd7826c684d5b5a00c216ca183536 ""
+  "Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf" 1399300824 7691 ab6c4ccfad81e34a6d152ca46f999324 ""
+  "Figures/plot2p1_n_is_160_a_2.eps" 1399300723 11309 a0311512e8bbce029d574dc974e33ee7 ""
   "Figures/plot2p1_n_is_320-eps-converted-to.pdf" 1399300220 8666 8a786b80fa6e3d583cf575bfc6ec7f43 ""
   "Figures/plot2p1_n_is_320.eps" 1399300040 12883 ac739fc0cb36aee30d1c13832def6d89 ""
+  "Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf" 1399300825 8921 7e3fd67c5ae30473f7093e7e3d416684 ""
+  "Figures/plot2p1_n_is_320_a_2.eps" 1399300724 13086 79524e43a26dc3b7567baba201f9fce0 ""
   "Figures/plot2p1_n_is_80-eps-converted-to.pdf" 1399300158 6919 2645051affb36c4179ec6d91b381c8b1 ""
   "Figures/plot2p1_n_is_80.eps" 1399300039 10070 ddf0f9ba5f61b3b4a2bc62380792a5c3 ""
-  "Figures/plot2p2_n_is_160-eps-converted-to.pdf" 1399300203 7626 42ea3650fc5fa6a2bf555c8aa8327271 ""
-  "Figures/plot2p2_n_is_160.eps" 1399300069 11286 fcfe4121333ef077413db9db26bf9ac6 ""
-  "Figures/plot2p2_n_is_80-eps-converted-to.pdf" 1399300202 7007 8c4629267db505bd9eef0a5616c1be0f ""
-  "Figures/plot2p2_n_is_80.eps" 1399300068 10370 91adfb8ca09e867a2d9d4494f26c4a3a ""
-  "HW4_High_Resolution_shock_capturing_methods.aux" 1399300220 4953 e13fa9046ba4a191509c5226bfdc4ae8 ""
+  "Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf" 1399300823 7033 f6146c586ba835dfa4ee5cfac06d153f ""
+  "Figures/plot2p1_n_is_80_a_2.eps" 1399300722 10411 d12912792ac36269cc65467d8036d3eb ""
+  "HW4_High_Resolution_shock_capturing_methods.aux" 1399301123 5313 2259ec5de26b2b2e5d49c4de255862bc ""
   "HW4_High_Resolution_shock_capturing_methods.bbl" 0 -1 0 "bibtex HW4_High_Resolution_shock_capturing_methods"
-  "HW4_High_Resolution_shock_capturing_methods.out" 1399300220 443 31a47875db1df24eeff248532a267ed5 ""
+  "HW4_High_Resolution_shock_capturing_methods.out" 1399301123 443 31a47875db1df24eeff248532a267ed5 ""
   "HW4_High_Resolution_shock_capturing_methods.tex" 1399298843 2093 62297cae71684cb885160ee593581530 ""
   "Sections/Section1.tex" 1399297276 3520 b052212ca61946370d725ff2f40fb976 ""
-  "Sections/Section2.tex" 1399300217 3205 94896a9a1637229d27867e6b5c3b2fa0 ""
+  "Sections/Section2.tex" 1399301108 3814 cfc76fe26e03aff29aa0e73a48df9563 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.out"
   "HW4_High_Resolution_shock_capturing_methods.log"

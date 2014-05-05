@@ -17,7 +17,7 @@
 		Figure~\ref{fig:Figure21} shows the plots using different N values.  The N value seemed to affect the sharpness of the front edge of the wave. As N increased, the sharpness increased.  
 		\begin{figure}
 			[htbp] \centering 
-			\subfigure[$N=80$ \label{fig:bushing3a}]{ 
+			\subfigure[$N=80$ \label{fig:Figures_plot2p1_n_is_80}]{ 
 			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_80.eps}} \hspace{5pt} 
 			\subfigure[$N=160$ \label{fig:Figures_plot2p1_n_is_80}]{ 
 			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_160.eps}} \label{fig:Figures_plot2p1_n_is_160}
@@ -34,19 +34,19 @@
 		
 		
 		\item Then try also a higher pulse, say a = 2H. Comment on how well the single pulse initial data works. 
+		
+		A pulse with $a>1/5 H$ gives unstable results using a time step of 80\% of the CFL condition, so I had to reduce it to 40\% in order to get the results shown in Figure~\ref{fig:Figure21d}.  This figure is different from Figure~\ref{fig:Figure21} in that the height of the left moving pulse isn't as negligible as it once was.  The overlap of the smaller wave is much more noticeable when $a$ is large compared to H. 
+		
 		\begin{figure}
 			[htbp] \centering 
-			\subfigure[$N=80$ \label{fig:bushing3a}]{ 
-			\includegraphics[width=\hpage]{Figures/plot2p2_n_is_80.eps}} \hspace{5pt} 
-			\subfigure[$N=160$
-			\label{fig:Figures_plot2p2_n_is_80}]{ 
-			\includegraphics[width=\hpage]{Figures/plot2p2_n_is_160.eps}} 
-			\label{fig:Figures_plot2p2_n_is_160}
-			\subfigure[$N=320$
-			\label{fig:Figures_plot2p2_n_is_320}]{
-			\includegraphics[width=\hpage]{Figures/plot2p2_n_is_160.eps}}
-			\caption{These are the plots with different N values.  The CFL condition was set to 80\% of the value that would be ideal for a linear problem. The wave edges get sharper when $N$ is increased} 
-			\label{fig:Figure21H2}
+			\subfigure[$N=80$ \label{fig:Figures_plot2p1_n_is_80_a_2}]{ 
+			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_80_a_2.eps}} \hspace{5pt} 
+			\subfigure[$N=160$ \label{fig:Figures_plot2p1_n_is_80_a_2}]{ 
+			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_160_a_2.eps}} \label{fig:Figures_plot2p1_n_is_160_a_2}
+			\subfigure[$N=320$ \label{fig:Figures_plot2p1_n_is_320_a_2}]{
+			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_320_a_2.eps}}
+			\caption{These are the plots with different N values.  The CFL condition was set to 40\% of the value that would be ideal for a linear problem. The wave edges get sharper when $N$ is increased, but changing the value of $a$ has also changed the overall speed and shape of the wave after it recombines with its small wave that moves leftward.} 
+			\label{fig:Figure21d}
 		\end{figure}
 		
 	\end{enumerate}
