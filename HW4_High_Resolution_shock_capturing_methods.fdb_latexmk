@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex HW4_High_Resolution_shock_capturing_methods"] 1399301365 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1399301370
+["bibtex HW4_High_Resolution_shock_capturing_methods"] 1399322924 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1399322924
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
   "HW4_High_Resolution_shock_capturing_methods.aux" 1399301367 5347 9d087fb059594d81ff2825166129ddab ""
   "HW4_High_Resolution_shock_capturing_methods.bcf" 0 -1 0 ""
@@ -7,7 +7,7 @@
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.bbl"
   "HW4_High_Resolution_shock_capturing_methods.blg"
-["pdflatex"] 1399301365 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1399301370
+["pdflatex"] 1399301365 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1399322924
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -103,7 +103,7 @@
   "HW4_High_Resolution_shock_capturing_methods.out" 1399301367 443 31a47875db1df24eeff248532a267ed5 ""
   "HW4_High_Resolution_shock_capturing_methods.tex" 1399298843 2093 62297cae71684cb885160ee593581530 ""
   "Sections/Section1.tex" 1399297276 3520 b052212ca61946370d725ff2f40fb976 ""
-  "Sections/Section2.tex" 1399301354 3859 ad01da07690c87df69cb58af40e1c931 ""
+  "Sections/Section2.tex" 1399313427 3859 ad01da07690c87df69cb58af40e1c931 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.out"
   "HW4_High_Resolution_shock_capturing_methods.log"
