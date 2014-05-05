@@ -6,15 +6,15 @@ addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
     '/HW4-High Resolution shock-capturing methods/matlabfiles/']);
 
 %% Parameters
-N = 100;
-L = 1.;
+N = 500;
+L = 10.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
 c = g*sqrt(H); % Wave speed
 tau = dx/c; % Time Step
 coeff = -tau/(2*dx);
-nStep = 2*L/(c*tau);
+nStep = 3*L/(c*tau);
 nCells = 1:N;
 ghostCellOneSide = 2;
 cellsPlusGhost = 1:(N+2*ghostCellOneSide);
@@ -25,7 +25,7 @@ a = 1/5*H;
 h = H + a*exp(-(x-L/2).^2/(w^2));
 h = padarray(h',ghostCellOneSide)';
 % Boundary Conditions
-m = zeros(1,length(h));
+m = c*tau*h/max(h);
 %% BC
 % needs to be changed if ghostCellOneSide is changed
 h(1) = h(4);
@@ -49,7 +49,7 @@ for iStep=1:(round(nStep))
     hOld=h;
     mOld=m;
     flux = (1/2*g*hOld.^2 + (mOld.^2)./hOld);
-    h(3:(N+2)) = .5*(hOld(ip)+hOld(im)) + coeff*(mOld(ip)-mOld(im));
+    h(3:(N+2)) = .5*(hOld(ip)+hOld(im)) + coeff*(m(ip)-m(im));
     m(3:(N+2)) = .5*(mOld(ip)+mOld(im)) + coeff*(flux(ip)-flux(im));
     h(1) = h(4);
     h(2) = h(3);
@@ -75,10 +75,10 @@ end
 figure(2)
 for ip = 1:2:nStep
     clf;
-    plot(x,mplot((3:(N+2)),1))
+    plot(x,hplot((3:(N+2)),1))
     hold on;
-    plot(x,mplot((3:(N+2)),ip),'-');
-    pause(.1)
+    plot(x,hplot((3:(N+2)),ip),'-');
+    pause(.01)
 end
 %% m plot
 % figure(3)
