@@ -6,7 +6,7 @@ addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
     '/HW4-High Resolution shock-capturing methods/matlabfiles/']);
 
 %% Parameters
-N = 500;
+N = 80;
 L = 10.;
 dx = L/N; % Grid spacing
 H = 1;
@@ -14,7 +14,8 @@ g = 9.8;
 c = sqrt(g*H); % Wave speed
 tau = .8*dx/c; % Time Step
 coeff = -tau/(2*dx);
-nStep = L/(c*tau);
+nStep = .8*L/(c*tau);
+finalTime = nStep*tau;
 nCells = 1:N;
 ghostCellOneSide = 2;
 cellsPlusGhost = 1:(N+2*ghostCellOneSide);
@@ -46,13 +47,13 @@ ip = im+2;
 hplot(:,1) = h(:);
 mplot(:,1) = m(:);
 flux = (1/2*g*h.^2 + (m.^2)./h);
-%% Loo
+%% Loop
 for iStep=1:(round(nStep))
     hOld=h;
     mOld=m;
     flux = (1/2*g*hOld.^2 + (mOld.^2)./hOld);
-    h(i) = .5*(hOld(i+1)+hOld(i-1)) + coeff*(m(i+1)-m(i-1));
-    m(i) = .5*(mOld(i+1)+mOld(i-1)) + coeff*(flux(i+1)-flux(i-1));
+    h(i) = .5*(hOld(i+1)+hOld(i-1)) - abs(coeff)*(m(i+1)-m(i-1));
+    m(i) = .5*(mOld(i+1)+mOld(i-1)) - abs(coeff)*(flux(i+1)-flux(i-1));
     h(1) = h(4);
     h(2) = h(3);
     m(1) = m(4)*(-1);
@@ -67,21 +68,21 @@ end
 
 %% Plot
 % figure(1); clf;
-% plot(x,hplot(3:(N+2),1),'-',x,h,'--');
-% legend('t=0  ','t=1');
+% plot(x,hplot(i,1),'-',x,hplot(i,nStep),'--');
+% legend('t=0','t=1');
 % xlabel('x');  ylabel('h(x,t)');
 % title(sprintf('$h(x,t)$ $\\Delta t=$%0.2g,',...
 %     ' $\\epsilon =$ %g',tau,a),...
 %     'Interpreter','latex')
 %% h plot1
-figure(2)
-for ip = 1:2:nStep
-    clf;
-    plot(x,hplot((3:(N+2)),1))
-    hold on;
-    plot(x,hplot((3:(N+2)),ip),'-');
-    pause(.01)
-end
+% figure(2)
+% for iPlotting = 1:2:nStep
+%     clf;
+%     plot(x,hplot((3:(N+2)),1))
+%     hold on;
+%     plot(x,hplot((3:(N+2)),iPlotting),'-');
+%     pause(.01)
+% end
 %% m plot
 % figure(3)
 % for ip = 1:8:nStep
@@ -91,6 +92,15 @@ end
 %     plot(x,mplot(:,ip),'-');
 %     pause(.01)
 % end
+%% Plot for 2.1
+    initialH = plot(x,hplot((3:(N+2)),1),'-','color','b')
+    hold on;
+    finalH = plot(x,hplot((3:(N+2)),round(nStep)),'--');
+    legend([initialH finalH],...
+        't=0',...
+        sprintf('t=%0.2g',finalTime));
+    xlabel('x');  ylabel('h(x,t)');
+    hold off;
 %%
 printYesNo = 0;
 if printYesNo == 1
@@ -99,5 +109,5 @@ if printYesNo == 1
         'methods/Figures/'];
     set(figure(1), 'PaperPositionMode', 'auto');
     print('-depsc2', [saveFigurePath ...
-        sprintf('plot1%g',floor(tau^-1))]);
+        sprintf('plot2p1_n_is_%g',N)]);
 end
