@@ -11,10 +11,10 @@ L = 10.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
-c = g*sqrt(H); % Wave speed
-tau = dx/c; % Time Step
+c = sqrt(g*H); % Wave speed
+tau = .8*dx/c; % Time Step
 coeff = -tau/(2*dx);
-nStep = 3*L/(c*tau);
+nStep = L/(c*tau);
 nCells = 1:N;
 ghostCellOneSide = 2;
 cellsPlusGhost = 1:(N+2*ghostCellOneSide);
@@ -25,7 +25,9 @@ a = 1/5*H;
 h = H + a*exp(-(x-L/2).^2/(w^2));
 h = padarray(h',ghostCellOneSide)';
 % Boundary Conditions
-m = c*tau*h/max(h);
+% m=h;
+m = a*exp(-(x-L/2).^2/(w^2))*c;
+m = padarray(m',ghostCellOneSide)';
 %% BC
 % needs to be changed if ghostCellOneSide is changed
 h(1) = h(4);
@@ -37,9 +39,9 @@ h(N+3) = h(N+2);
 m(N+4) = m(N+1)*(-1);
 m(N+3) = m(N+2)*(-1);
 %%
-iWithGhost = ((1+ghostCellOneSide):(N+ghostCellOneSide));
-im = iWithGhost-1;
-ip = im+2
+i = ((1+ghostCellOneSide):(N+ghostCellOneSide));
+im = i-1;
+ip = im+2;
 %% Record the initial state
 hplot(:,1) = h(:);
 mplot(:,1) = m(:);
@@ -49,8 +51,8 @@ for iStep=1:(round(nStep))
     hOld=h;
     mOld=m;
     flux = (1/2*g*hOld.^2 + (mOld.^2)./hOld);
-    h(3:(N+2)) = .5*(hOld(ip)+hOld(im)) + coeff*(m(ip)-m(im));
-    m(3:(N+2)) = .5*(mOld(ip)+mOld(im)) + coeff*(flux(ip)-flux(im));
+    h(i) = .5*(hOld(i+1)+hOld(i-1)) + coeff*(m(i+1)-m(i-1));
+    m(i) = .5*(mOld(i+1)+mOld(i-1)) + coeff*(flux(i+1)-flux(i-1));
     h(1) = h(4);
     h(2) = h(3);
     m(1) = m(4)*(-1);
