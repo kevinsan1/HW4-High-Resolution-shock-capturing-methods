@@ -1,4 +1,8 @@
-H = 2;
-advectStartFunction( 80 , 1 , H )
-advectStartFunction( 160 , 1 , H )
-advectStartFunction( 320 , 1 , H )
+H = 1;
+print=0;
+a = 2*H;
+advectStartFunction( 80 , 	print , H , a)
+%%
+advectStartFunction( 160 , 	print , H , a)
+%%
+advectStartFunction( 320 , 	print , H , a)

@@ -1,4 +1,4 @@
-function [ output_args ] = advectStartFunction( N , printYesNo , H )
+function [ output_args ] = advectStartFunction( N , printYesNo , H , a )
 %% Use this function with N being the number of points and
 % printYesNo to 0 for no print, and 1 for print
 % H is the height
@@ -27,7 +27,7 @@ cellsPlusGhost = 1:(N+2*ghostCellOneSide);
 %% Boundary Conditions
 w = 0.1*L; % Width
 x = (nCells-1/2)*dx; % Grid points
-a = 1/5*H;
+% a = 1/5*H;
 h = H + a*exp(-(x-L/2).^2/(w^2));
 h = padarray(h',ghostCellOneSide)';
 % Boundary Conditions
