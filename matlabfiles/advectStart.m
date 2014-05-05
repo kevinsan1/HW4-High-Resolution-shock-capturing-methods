@@ -3,8 +3,9 @@ clear all;
 clc;
 close all;
 addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
-    '/HW4-High Resolution shock-capturing methods/matlabfiles/']);
-
+    '/HW4-High Resolution shock-capturing methods/']);
+addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
+    '/HW4-High Resolution shock-capturing methods/Figures/']);
 %% Parameters
 N = 80;
 L = 10.;
@@ -102,12 +103,12 @@ end
     xlabel('x');  ylabel('h(x,t)');
     hold off;
 %%
-printYesNo = 0;
+printYesNo = 1;
 if printYesNo == 1
     saveFigurePath = ['/Users/kevin/SkyDrive/KTH Work/'...
-        'LaTeX Reports/HW4-High Resolution shock-capturing'...
+        'LaTeX Reports/HW4-High Resolution shock-capturing '...
         'methods/Figures/'];
     set(figure(1), 'PaperPositionMode', 'auto');
     print('-depsc2', [saveFigurePath ...
-        sprintf('plot2p1_n_is_%g',N)]);
+        sprintf('plot2p1nis%g',N)]);
 end

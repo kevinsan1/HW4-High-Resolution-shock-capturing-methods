@@ -1,0 +1,55 @@
+
+
+%!TEX root = /Users/kevin/SkyDrive/KTH Work/LaTeX Reports/HW4-High Resolution shock-capturing methods/HW4_High_Resolution_shock_capturing_methods.tex
+\section{First order Roe scheme} 
+
+% (fold)
+\label{sec:first_order_roe_scheme} 
+\begin{enumerate}
+	\item 
+	\begin{enumerate}
+		\item Explain how to choose m(x,0), to make a single pulse (not two!) based on the linearized problem. 
+		
+		You can make it a single pulse by giving the wave an initial speed proportional to its height in one direction. Since $m=hv$, we can set m to $hc$, where $c=\sqrt(gH)$, and $H=0$ since we want a linearized approximation.
+		
+		\item Use this initial data and run the Roe solver with n=80, 160, 320 and the CFL number as large as possible without instability, until the wave has been fully reflected at L. Plot the wave shapes. 
+		
+		Figure~\ref{fig:Figure21} shows the plots using different N values.  The N value seemed to affect the sharpness of the front edge of the wave. As N increased, the sharpness increased.  
+		\begin{figure}
+			[htbp] \centering 
+			\subfigure[$N=80$ \label{fig:bushing3a}]{ 
+			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_80.eps}} \hspace{5pt} 
+			\subfigure[$N=160$ \label{fig:Figures_plot2p1_n_is_80}]{ 
+			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_160.eps}} \label{fig:Figures_plot2p1_n_is_160}
+			\subfigure[$N=320$ \label{fig:Figures_plot2p1_n_is_320}]{
+			\includegraphics[width=\hpage]{Figures/plot2p1_n_is_320.eps}}
+			\caption{These are the plots with different N values.  The CFL condition was set to 80\% of the value that would be ideal for a linear problem. The wave edges get sharper when $N$ is increased} 
+			\label{fig:Figure21}
+		\end{figure}
+		
+		\item Compare with solutions obtained using your Lax-Friedrichs solver from HW2. 
+		
+		The solution obtained here looks very similar to the Lax-Friedrichs solver from HW2 as the shape of the wave forms a sharp edge and looks like a triangle instead of a Gaussian.  This solution isn't stable at the CFL condition and we must make the time step a little smaller.  The Lax-Friedrich solution was also not stable at the CFL condition, but I was forced to decrease the time step by a much larger amount in order to see stability for a few seconds.
+		\item Comment about order of accuracy, dissipation and dispersion. 
+		
+		
+		\item Then try also a higher pulse, say a = 2H. Comment on how well the single pulse initial data works. 
+		\begin{figure}
+			[htbp] \centering 
+			\subfigure[$N=80$ \label{fig:bushing3a}]{ 
+			\includegraphics[width=\hpage]{Figures/plot2p2_n_is_80.eps}} \hspace{5pt} 
+			\subfigure[$N=160$
+			\label{fig:Figures_plot2p2_n_is_80}]{ 
+			\includegraphics[width=\hpage]{Figures/plot2p2_n_is_160.eps}} 
+			\label{fig:Figures_plot2p2_n_is_160}
+			\subfigure[$N=320$
+			\label{fig:Figures_plot2p2_n_is_320}]{
+			\includegraphics[width=\hpage]{Figures/plot2p2_n_is_160.eps}}
+			\caption{These are the plots with different N values.  The CFL condition was set to 80\% of the value that would be ideal for a linear problem. The wave edges get sharper when $N$ is increased} 
+			\label{fig:Figure21H2}
+		\end{figure}
+		
+	\end{enumerate}
+\end{enumerate}
+
+% section first_order_roe_scheme (end)

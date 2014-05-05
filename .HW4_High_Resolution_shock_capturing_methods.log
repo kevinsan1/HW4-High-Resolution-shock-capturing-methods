@@ -1,0 +1,297 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=.HW4_High_Resolution_shock_capturing_methods 2014.5.5)  5 MAY 2014 15:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&.HW4_High_Resolution_shock_capturing_methods "./.HW4_High_Resolution_shock_c
+apturing_methods.tex"
+(./.HW4_High_Resolution_shock_capturing_methods.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./.HW4_High_Resolution_shock_capturing_methods.aux)
+\openout1 = `.HW4_High_Resolution_shock_capturing_methods.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen143
+\scratchbox=\box28
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen144
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring ON on input line 49.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count128
+)
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
+(./.HW4_High_Resolution_shock_capturing_methods.out) (./.HW4_High_Resolution_sh
+ock_capturing_methods.out)
+\@outlinefile=\write3
+\openout3 = `.HW4_High_Resolution_shock_capturing_methods.out'.
+
+(./Sections/Section1.tex) (./Sections/Section2.tex [1{/usr/local/texlive/2013/t
+exmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \csname\endcsname
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Argument of \@caption has an extra }.
+<inserted text> 
+                \par 
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@ifundefined {float@caption}{}{\expandafter \ifx \csname @float@c@\@captype \E
+TC.
+! Paragraph ended before \@caption was complete.
+<to be read again> 
+                   \par 
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   c
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   c
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+\filename@base ...ndcsname\z@ cl@figure\endcsname 
+                                                  \endgroup \let \@@protect ...
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+Please don't say `\def cs{...}', say `\def\cs{...}'.
+I've inserted an inaccessible control sequence so that your
+definition will be completed without mixing me up too badly.
+You can recover graciously from this error, if you're
+careful; see exercise 27.2 in The TeXbook.
+
+
+Overfull \hbox (513.91273pt too wide) in paragraph at lines 21--21
+[]\OT1/cmr/m/n/10 cl@figure376\377\0002\000\040\000F\000i\000r\000s\000t\000\04
+0\000o\000r\000d\000e\000r\000\040\000R\000o\000e\000\040\000s\000c\000h\000e\0
+00m\000e 
+ []
+
+! You can't use a prefix with `the character \'.
+<to be read again> 
+                   \let 
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Extra \else.
+\Ginclude@graphics ...etbase \Gin@temp \fi }\else 
+                                                  \Gin@getbase {\Gin@sepdefa...
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I'm ignoring this; it doesn't match any \if.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   c
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   c
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+\filename@base ...ndcsname\z@ cl@figure\endcsname 
+                                                  \endgroup \let \@@protect ...
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+Please don't say `\def cs{...}', say `\def\cs{...}'.
+I've inserted an inaccessible control sequence so that your
+definition will be completed without mixing me up too badly.
+You can recover graciously from this error, if you're
+careful; see exercise 27.2 in The TeXbook.
+
+
+Overfull \hbox (548.91284pt too wide) in paragraph at lines 21--21
+[]\OT1/cmr/m/n/10 \\cl@figure\\\\\376\377\0002\000\040\000F\000i\000r\000s\000t
+\000\040\000o\000r\000d\000e\000r\000\040\000R\000o\000e\000\040\000s\000c\000h
+\000e\000m\000e 
+ []
+
+! You can't use a prefix with `the character \'.
+<to be read again> 
+                   \let 
+l.21 ...\includegraphics[width=\textwidth]\caption
+                                                  {N=80}
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.22 				{Figures/plot2p1_
+                          n_is_80.eps} \label{fig:Figures_plot2p1_n_is_80}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.22 				{Figures/plot2p1_n_
+                            is_80.eps} \label{fig:Figures_plot2p1_n_is_80}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+l.22 				{Figures/plot2p1_n_is_80.eps}
+                                       \label{fig:Figures_plot2p1_n_is_80}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 			\end{minipage}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use a prefix with `the character \'.
+<to be read again> 
+                   \let 
+l.23 			\end{minipage}
+                      
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+! You can't use a prefix with `the character \'.
+<to be read again> 
+                   \let 
+l.23 			\end{minipage}
+                      
+I'll pretend you didn't say \long or \outer or \global or \protected.
+
+)
+! Incomplete \iffalse; all text was ignored after line 23.
+<inserted text> 
+                \fi 
+l.56 \input{Sections/Section2.tex}
+                                  
+The file ended while I was skipping conditional text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+)
+! Incomplete \iffalse; all text was ignored after line 23.
+<inserted text> 
+                \fi 
+<*> ...igh_Resolution_shock_capturing_methods.tex"
+                                                  
+The file ended while I was skipping conditional text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+! Emergency stop.
+<*> ...igh_Resolution_shock_capturing_methods.tex"
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 623 strings out of 484093
+ 9898 string characters out of 6008315
+ 217115 words of memory out of 5000000
+ 13210 multiletter control sequences out of 15000+600000
+ 8716 words of font info for 32 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 28i,16n,28p,580b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

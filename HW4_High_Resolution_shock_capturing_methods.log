@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 15:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,27 +335,33 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 
-(./HW4_High_Resolution_shock_capturing_methods.aux)
+(./HW4_High_Resolution_shock_capturing_methods.aux
+
+LaTeX Warning: Label `fig:bushing3a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bushing3a' multiply defined.
+
+)
 \openout1 = `HW4_High_Resolution_shock_capturing_methods.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen143
@@ -384,7 +390,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring ON on input line 50.
+Package hyperref Info: Link coloring ON on input line 51.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -394,9 +400,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (./HW4_High_Resolution_shock_capturing_methods.out)
 (./HW4_High_Resolution_shock_capturing_methods.out)
@@ -404,46 +410,169 @@ LaTeX Info: Redefining \nameref on input line 50.
 \openout3 = `HW4_High_Resolution_shock_capturing_methods.out'.
 
  (./Sections/Section1.tex)
-No file HW4_High_Resolution_shock_capturing_methods.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-[1
+(./Sections/Section2.tex [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package epstopdf Info: Source file: <Figures/plot2p1_n_is_80.eps>
+(epstopdf)                    date: 2014-05-05 16:27:19
+(epstopdf)                    size: 10070 bytes
+(epstopdf)             Output file: <Figures/plot2p1_n_is_80-eps-converted-to.p
+df>
+(epstopdf)                    date: 2014-05-05 16:29:18
+(epstopdf)                    size: 6919 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_80-ep
+s-converted-to.pdf Figures/plot2p1_n_is_80.eps>
+(epstopdf)             \includegraphics on input line 21.
+Package epstopdf Info: Output file is already uptodate.
 
-(./HW4_High_Resolution_shock_capturing_methods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+<Figures/plot2p1_n_is_80-eps-converted-to.pdf, id=38, 485.815pt x 384.43625pt>
+File: Figures/plot2p1_n_is_80-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Figures/plot2p1_n_is_80-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/plot2p1_n_is_80-eps-converted-to.pdf used on i
+nput line 21.
+(pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
+Package epstopdf Info: Source file: <Figures/plot2p1_n_is_160.eps>
+(epstopdf)                    date: 2014-05-05 16:27:20
+(epstopdf)                    size: 10990 bytes
+(epstopdf)             Output file: <Figures/plot2p1_n_is_160-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-05-05 16:29:19
+(epstopdf)                    size: 7520 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_160-e
+ps-converted-to.pdf Figures/plot2p1_n_is_160.eps>
+(epstopdf)             \includegraphics on input line 23.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/plot2p1_n_is_160-eps-converted-to.pdf, id=39, 485.815pt x 384.43625pt>
+File: Figures/plot2p1_n_is_160-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/plot2p1_n_is_160-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/plot2p1_n_is_160-eps-converted-to.pdf used on 
+input line 23.
+(pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
+Package epstopdf Info: Source file: <Figures/plot2p1_n_is_320.eps>
+(epstopdf)                    date: 2014-05-05 16:27:20
+(epstopdf)                    size: 12883 bytes
+(epstopdf)             Output file: <Figures/plot2p1_n_is_320-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_320-e
+ps-converted-to.pdf Figures/plot2p1_n_is_320.eps>
+(epstopdf)             \includegraphics on input line 25.
+runsystem(repstopdf --outfile=Figures/plot2p1_n_is_320-eps-converted-to.pdf Fig
+ures/plot2p1_n_is_320.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <Figures/plot2p1_n_is_320-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-05-05 16:30:20
+(epstopdf)                    size: 8666 bytes.
+
+<Figures/plot2p1_n_is_320-eps-converted-to.pdf, id=40, 485.815pt x 384.43625pt>
+File: Figures/plot2p1_n_is_320-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/plot2p1_n_is_320-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/plot2p1_n_is_320-eps-converted-to.pdf used on 
+input line 25.
+(pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
+ [2 <./Figures/plot2p1_n_is_80-eps-converted-to.pdf> <./Figures/plot2p1_n_is_16
+0-eps-converted-to.pdf> <./Figures/plot2p1_n_is_320-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figures/plot2p2_n_is_80.eps>
+(epstopdf)                    date: 2014-05-05 16:27:48
+(epstopdf)                    size: 10370 bytes
+(epstopdf)             Output file: <Figures/plot2p2_n_is_80-eps-converted-to.p
+df>
+(epstopdf)                    date: 2014-05-05 16:30:02
+(epstopdf)                    size: 7007 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/plot2p2_n_is_80-ep
+s-converted-to.pdf Figures/plot2p2_n_is_80.eps>
+(epstopdf)             \includegraphics on input line 40.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/plot2p2_n_is_80-eps-converted-to.pdf, id=70, 485.815pt x 384.43625pt>
+File: Figures/plot2p2_n_is_80-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Figures/plot2p2_n_is_80-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/plot2p2_n_is_80-eps-converted-to.pdf used on i
+nput line 40.
+(pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
+Package epstopdf Info: Source file: <Figures/plot2p2_n_is_160.eps>
+(epstopdf)                    date: 2014-05-05 16:27:49
+(epstopdf)                    size: 11286 bytes
+(epstopdf)             Output file: <Figures/plot2p2_n_is_160-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-05-05 16:30:03
+(epstopdf)                    size: 7626 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/plot2p2_n_is_160-e
+ps-converted-to.pdf Figures/plot2p2_n_is_160.eps>
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/plot2p2_n_is_160-eps-converted-to.pdf, id=71, 485.815pt x 384.43625pt>
+File: Figures/plot2p2_n_is_160-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/plot2p2_n_is_160-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/plot2p2_n_is_160-eps-converted-to.pdf used on 
+input line 43.
+(pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
+Package epstopdf Info: Source file: <Figures/plot2p2_n_is_160.eps>
+(epstopdf)                    date: 2014-05-05 16:27:49
+(epstopdf)                    size: 11286 bytes
+(epstopdf)             Output file: <Figures/plot2p2_n_is_160-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-05-05 16:30:03
+(epstopdf)                    size: 7626 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/plot2p2_n_is_160-e
+ps-converted-to.pdf Figures/plot2p2_n_is_160.eps>
+(epstopdf)             \includegraphics on input line 47.
+Package epstopdf Info: Output file is already uptodate.
+File: Figures/plot2p2_n_is_160-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Figures/plot2p2_n_is_160-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/plot2p2_n_is_160-eps-converted-to.pdf used on 
+input line 47.
+(pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
+)
+No file HW4_High_Resolution_shock_capturing_methods.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+[3 <./Figures/plot2p2_n_is_80-eps-converted-to.pdf> <./Figures/plot2p2_n_is_160
+-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+ (./HW4_High_Resolution_shock_capturing_methods.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `HW4_High_Resolution_shock_capturing_methods.
 out' has not changed.
-(rerunfilecheck)             Checksum: 9C98B9AA63C7F8E39459290E0D056A9E;268.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+(rerunfilecheck)             Checksum: 31A47875DB1DF24EEFF248532A267ED5;443.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 9839 strings out of 493315
- 139222 string characters out of 6137904
- 217115 words of memory out of 5000000
- 13210 multiletter control sequences out of 15000+600000
+ 9907 strings out of 493315
+ 140976 string characters out of 6137904
+ 219142 words of memory out of 5000000
+ 13250 multiletter control sequences out of 15000+600000
  8716 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,16n,28p,529b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,538b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on HW4_High_Resolution_shock_capturing_methods.pdf (1 page, 1196
-24 bytes).
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on HW4_High_Resolution_shock_capturing_methods.pdf (3 pages, 166
+166 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
