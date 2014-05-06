@@ -183,6 +183,19 @@ INPUT ./Figures/plot2p1_n_is_320_a_2.eps
 INPUT ./Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf
 INPUT ./Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf
 INPUT ./Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf
+INPUT Sections/Section221.tex
+INPUT Sections/Section221.tex
+INPUT Sections/Section222.tex
+INPUT Sections/Section222.tex
+INPUT Figures/steadySolutionsp1_n_is_80_a_0.eps
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0.eps
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0.eps
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0.eps
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf
+INPUT ./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf
 INPUT HW4_High_Resolution_shock_capturing_methods.aux
 INPUT ./HW4_High_Resolution_shock_capturing_methods.out
 INPUT ./HW4_High_Resolution_shock_capturing_methods.out
@@ -200,3 +213,4 @@ INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb

@@ -127,7 +127,7 @@ B(N+3) = B(N+2);
             'methods/Figures/'];
         set(figure(3), 'PaperPositionMode', 'auto');
         print('-depsc2', [saveFigurePath ...
-            sprintf('steadySolutionsp%g_n_is_%g_a_%g',H,N,a)]);
+            sprintf('steadySolutionsp%g_n_is_%g_a_%g',H,N,round(a))]);
     end
     
     

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex HW4_High_Resolution_shock_capturing_methods"] 1399322924 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1399322924
+["bibtex HW4_High_Resolution_shock_capturing_methods"] 1399326201 "HW4_High_Resolution_shock_capturing_methods.aux" "HW4_High_Resolution_shock_capturing_methods.bbl" "HW4_High_Resolution_shock_capturing_methods" 1399326202
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "HW4_High_Resolution_shock_capturing_methods.aux" 1399301367 5347 9d087fb059594d81ff2825166129ddab ""
+  "HW4_High_Resolution_shock_capturing_methods.aux" 1399326201 6284 d8e96b94dbcf85ed8c454ac15d4bd119 ""
   "HW4_High_Resolution_shock_capturing_methods.bcf" 0 -1 0 ""
   "My_Book.bib" 0 -1 0 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.bbl"
   "HW4_High_Resolution_shock_capturing_methods.blg"
-["pdflatex"] 1399301365 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1399322924
+["pdflatex"] 1399326201 "HW4_High_Resolution_shock_capturing_methods.tex" "HW4_High_Resolution_shock_capturing_methods.pdf" "HW4_High_Resolution_shock_capturing_methods" 1399326202
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -38,6 +38,7 @@
   "/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1303254447 8237 52810bdb4db2270e717422560a104aea ""
@@ -98,12 +99,16 @@
   "Figures/plot2p1_n_is_80.eps" 1399300039 10070 ddf0f9ba5f61b3b4a2bc62380792a5c3 ""
   "Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf" 1399300823 7033 f6146c586ba835dfa4ee5cfac06d153f ""
   "Figures/plot2p1_n_is_80_a_2.eps" 1399300722 10411 d12912792ac36269cc65467d8036d3eb ""
-  "HW4_High_Resolution_shock_capturing_methods.aux" 1399301367 5347 9d087fb059594d81ff2825166129ddab ""
+  "Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf" 1399326089 7110 289c2c44628ddf556d8cd3a6de2ff082 ""
+  "Figures/steadySolutionsp1_n_is_80_a_0.eps" 1399326053 10733 a38fb70f80cb20cfecdd161fdb76c560 ""
+  "HW4_High_Resolution_shock_capturing_methods.aux" 1399326201 6284 d8e96b94dbcf85ed8c454ac15d4bd119 ""
   "HW4_High_Resolution_shock_capturing_methods.bbl" 0 -1 0 "bibtex HW4_High_Resolution_shock_capturing_methods"
-  "HW4_High_Resolution_shock_capturing_methods.out" 1399301367 443 31a47875db1df24eeff248532a267ed5 ""
-  "HW4_High_Resolution_shock_capturing_methods.tex" 1399298843 2093 62297cae71684cb885160ee593581530 ""
+  "HW4_High_Resolution_shock_capturing_methods.out" 1399326201 809 2bb92f4f692e3a353c461a11ea8c033c ""
+  "HW4_High_Resolution_shock_capturing_methods.tex" 1399325877 2156 ef29d16b1cf079d9b114b4c72135b007 ""
   "Sections/Section1.tex" 1399297276 3520 b052212ca61946370d725ff2f40fb976 ""
-  "Sections/Section2.tex" 1399313427 3859 ad01da07690c87df69cb58af40e1c931 ""
+  "Sections/Section2.tex" 1399325470 4003 4facf0e5e1d931636cb3f0a5a7377e62 ""
+  "Sections/Section221.tex" 1399325707 519 b14f92a2b19cb5ae051bf2b52d4535d6 ""
+  "Sections/Section222.tex" 1399326199 969 d07fb5a374bffa2d420de51f5b3a8310 ""
   (generated)
   "HW4_High_Resolution_shock_capturing_methods.out"
   "HW4_High_Resolution_shock_capturing_methods.log"

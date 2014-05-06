@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 16:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  5 MAY 2014 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -431,7 +431,7 @@ s-converted-to.pdf Figures/plot2p1_n_is_80.eps>
 (epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_80-eps-converted-to.pdf, id=38, 485.815pt x 384.43625pt>
+<Figures/plot2p1_n_is_80-eps-converted-to.pdf, id=46, 485.815pt x 384.43625pt>
 File: Figures/plot2p1_n_is_80-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/plot2p1_n_is_80-eps-converted-to.pdf>
@@ -450,7 +450,7 @@ ps-converted-to.pdf Figures/plot2p1_n_is_160.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_160-eps-converted-to.pdf, id=39, 485.815pt x 384.43625pt>
+<Figures/plot2p1_n_is_160-eps-converted-to.pdf, id=47, 485.815pt x 384.43625pt>
 File: Figures/plot2p1_n_is_160-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/plot2p1_n_is_160-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_160-eps-converted-to.pdf used on 
@@ -468,7 +468,7 @@ ps-converted-to.pdf Figures/plot2p1_n_is_320.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_320-eps-converted-to.pdf, id=40, 485.815pt x 384.43625pt>
+<Figures/plot2p1_n_is_320-eps-converted-to.pdf, id=48, 485.815pt x 384.43625pt>
 File: Figures/plot2p1_n_is_320-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/plot2p1_n_is_320-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_320-eps-converted-to.pdf used on 
@@ -488,7 +488,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf, id=72, 480.79625pt x 384.436
+<Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf, id=80, 480.79625pt x 384.436
 25pt>
 File: Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf Graphic file (type pdf)
  <use Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf>
@@ -507,7 +507,7 @@ _2-eps-converted-to.pdf Figures/plot2p1_n_is_160_a_2.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf, id=73, 480.79625pt x 384.43
+<Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf, id=81, 480.79625pt x 384.43
 625pt>
 File: Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -527,7 +527,7 @@ _2-eps-converted-to.pdf Figures/plot2p1_n_is_320_a_2.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf, id=74, 480.79625pt x 384.43
+<Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf, id=82, 480.79625pt x 384.43
 625pt>
 File: Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -536,32 +536,57 @@ Package pdftex.def Info: Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf used
  on input line 47.
 (pdftex.def)             Requested size: 217.42265pt x 173.85115pt.
 )
+(./Sections/Section221.tex) (./Sections/Section222.tex [3 <./Figures/plot2p1_n_
+is_80_a_2-eps-converted-to.pdf> <./Figures/plot2p1_n_is_160_a_2-eps-converted-t
+o.pdf> <./Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figures/steadySolutionsp1_n_is_80_a_0.eps>
+
+(epstopdf)                    date: 2014-05-05 23:40:53
+(epstopdf)                    size: 10733 bytes
+(epstopdf)             Output file: <Figures/steadySolutionsp1_n_is_80_a_0-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2014-05-05 23:41:29
+(epstopdf)                    size: 7110 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/steadySolutionsp1_
+n_is_80_a_0-eps-converted-to.pdf Figures/steadySolutionsp1_n_is_80_a_0.eps>
+(epstopdf)             \includegraphics on input line 16.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf, id=109, 480.79625p
+t x 384.43625pt>
+File: Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to
+.pdf used on input line 16.
+(pdftex.def)             Requested size: 321.61024pt x 257.16032pt.
+)
 No file HW4_High_Resolution_shock_capturing_methods.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-[3 <./Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf> <./Figures/plot2p1_n_is
-_160_a_2-eps-converted-to.pdf> <./Figures/plot2p1_n_is_320_a_2-eps-converted-to
-.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
- (./HW4_High_Resolution_shock_capturing_methods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+[4 <./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+
+(./HW4_High_Resolution_shock_capturing_methods.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `HW4_High_Resolution_shock_capturing_methods.
 out' has not changed.
-(rerunfilecheck)             Checksum: 31A47875DB1DF24EEFF248532A267ED5;443.
+(rerunfilecheck)             Checksum: 2BB92F4F692E3A353C461A11EA8C033C;809.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 9910 strings out of 493315
- 141240 string characters out of 6137904
- 219211 words of memory out of 5000000
- 13252 multiletter control sequences out of 15000+600000
+ 9932 strings out of 493315
+ 141835 string characters out of 6137904
+ 219544 words of memory out of 5000000
+ 13263 multiletter control sequences out of 15000+600000
  8716 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,16n,28p,538b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,538b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -575,12 +600,13 @@ texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on HW4_High_Resolution_shock_capturing_methods.pdf (3 pages, 173
-516 bytes).
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on HW4_High_Resolution_shock_capturing_methods.pdf (4 pages, 189
+146 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 47 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
