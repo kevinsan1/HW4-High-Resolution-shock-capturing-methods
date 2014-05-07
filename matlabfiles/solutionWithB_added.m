@@ -12,10 +12,10 @@ L = 10.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
-c = sqrt(g*H); % Wave speed
+c = 1.1*sqrt(g*H); % Wave speed
 tau = .8*dx/c; % Time Step
 coeff = -tau/(2*dx);
-nStep = L/(c*tau);
+nStep = 2*L/(c*tau);
 finalTime = nStep*tau;
 nCells = 1:N;
 ghostCellOneSide = 2;
@@ -72,6 +72,7 @@ B(N+3) = B(N+2);
         m(i) = .5*(mOld(i+1)+ mOld(i-1))...
             - abs(coeff)*(flux(i+1) - flux(i-1)...
             + g*h(i).*(B(i+1) - B(i-1)) );
+        totalHeight(:,iStep) = h(:) + B(:);
         h(1) = h(4);
         h(2) = h(3);
         m(1) = m(4)*(-1);
@@ -96,9 +97,9 @@ B(N+3) = B(N+2);
 %     figure(2)
 %     for iPlotting = 1:2:nStep
 %         clf;
-%         plot(x,hplot(i,1) + B(i)')
+%         plot(x',totalHeight(i,1)	)
 %         hold on;
-%         plot(x,hplot(i,iPlotting)+B(i)','-');
+%         plot(x',totalHeight(i,iPlotting)	,'-');
 %         finalB = plot(x,B(i),'-.','color','r');
 %         pause(.1)
 %     end
@@ -135,7 +136,5 @@ B(N+3) = B(N+2);
             ' Resolution shock-capturing methods/Figures/'];
         set(figure(3), 'PaperPositionMode', 'auto');
         print('-depsc2', [saveFigurePath ...
-            sprintf('steadySolutionsp%g_n_is_%g_a_%g',H,N,round(a))]);
+            sprintf('critical_c%g_p%g_n_is_%g_a_%g',round(c*1000),H,N,round(a))]);
     end
-    
-    

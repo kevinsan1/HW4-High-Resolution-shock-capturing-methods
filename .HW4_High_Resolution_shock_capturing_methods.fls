@@ -51,6 +51,7 @@ INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT Sections/Section2.tex
 INPUT Sections/Section2.tex
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT Figures/plot2p1_n_is_80.eps
 INPUT ./Figures/plot2p1_n_is_80.eps
