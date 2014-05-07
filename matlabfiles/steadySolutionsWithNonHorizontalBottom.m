@@ -3,8 +3,9 @@
 clear all;
 clc;
 close all;
-addpath(['/Users/kevin/SkyDrive/KTH Work/LaTeX Reports',...
-    '/HW4-High Resolution shock-capturing methods/matlabfiles/']);
+addpath(['/Users/kevin/SkyDrive/KTH Work/Period 3 2014'...
+    '/DN2255/Homework/4/HW4-High Resolution shock-capturing'...
+    ' methods/matlabfiles/']);
 %% Parameters
 N = 80;
 L = 10.;
@@ -41,8 +42,8 @@ m(N+4) = m(N+1)*(-1);
 m(N+3) = m(N+2)*(-1);
 %%
 i = ((1+ghostCellOneSide):(N+ghostCellOneSide));
-im = i-1;
-ip = i+1;
+% im = i-1;
+% ip = i+1;
 %% Record the initial state
 hplot(:,1) = h(:);
 mplot(:,1) = m(:);
@@ -57,17 +58,20 @@ for lengthOfX = 1:length(x)
     end
 end
 B = padarray(B',ghostCellOneSide)';
-B(1) = B(4);
-B(2) = B(3);
-B(N+4) = B(N+1);
-B(N+3) = B(N+2);
+B(1) = -B(4);
+B(2) = -B(3);
+B(N+4) = -B(N+1);
+B(N+3) = -B(N+2);
     %% Loop
     for iStep=1:(round(nStep))
         hOld=h;
         mOld=m;
         flux = (1/2*g*hOld.^2 + (mOld.^2)./hOld);
-        h(i) = .5*(hOld(i+1)+ hOld(i-1)) - abs(coeff)*(   m(i+1)	-m(i-1)) + tau*B(i);
-        m(i) = .5*(mOld(i+1)+ mOld(i-1)) - abs(coeff)*(flux(i+1)-flux(i-1)) + tau*B(i);
+        h(i) = .5*(hOld(i+1)+ hOld(i-1))...
+            - abs(coeff)*(m(i+1) - m(i-1));
+        m(i) = .5*(mOld(i+1)+ mOld(i-1))...
+            - abs(coeff)*(flux(i+1) - flux(i-1)...
+            + g*h(i).*(B(i+1) - B(i-1)) );
         h(1) = h(4);
         h(2) = h(3);
         m(1) = m(4)*(-1);
@@ -92,9 +96,9 @@ B(N+3) = B(N+2);
     figure(2)
     for iPlotting = 1:2:nStep
         clf;
-        plot(x,hplot(i,1))
+        plot(x,hplot(i,1) + B(i)')
         hold on;
-        plot(x,hplot(i,iPlotting),'-');
+        plot(x,hplot(i,iPlotting)+B(i)','-');
         finalB = plot(x,B(i),'-.','color','r');
         pause(.1)
     end
@@ -109,22 +113,24 @@ B(N+3) = B(N+2);
     % end
     %% Plot for 2.1
     figure(3)
-    initialH = plot(x,hplot(i,1),'-','color','b');
+    initialH = plot(x,hplot(i,1) + B(i)','-','color','b');
     hold on;
-    finalH = plot(x,hplot(i,round(nStep)),'--');
+    finalH = plot(x,hplot(i,round(nStep))','--');
+    hPlusB = plot(x,hplot(i,round(nStep))+ B(i)','--','color','m');
     finalB = plot(x,B(i),'-.','color','r');
-    legend([initialH finalH,finalB],...
-        't=0',...
+    legend([initialH,hPlusB,finalH,finalB],...
+        't=0, h(x) + B(x)',...
+        sprintf('t=%0.2g, h(x) + B(x)',finalTime),...
         sprintf('t=%0.2g',finalTime),...
         'B(x)');
     xlabel('x');  ylabel('h(x,t)');
     hold off;
     %%
-    printYesNo = 1;
+    printYesNo = 0;
     if printYesNo == 1
-        saveFigurePath = ['/Users/kevin/SkyDrive/KTH Work/'...
-            'LaTeX Reports/HW4-High Resolution shock-capturing '...
-            'methods/Figures/'];
+        saveFigurePath = ['/Users/kevin/SkyDrive/KTH Work'...
+            '/Period 3 2014/DN2255/Homework/4/HW4-High'...
+            ' Resolution shock-capturing methods/Figures/'];
         set(figure(3), 'PaperPositionMode', 'auto');
         print('-depsc2', [saveFigurePath ...
             sprintf('steadySolutionsp%g_n_is_%g_a_%g',H,N,round(a))]);
