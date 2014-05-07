@@ -58,10 +58,10 @@ for lengthOfX = 1:length(x)
     end
 end
 B = padarray(B',ghostCellOneSide)';
-B(1) = -B(4);
-B(2) = -B(3);
-B(N+4) = -B(N+1);
-B(N+3) = -B(N+2);
+B(1) = B(4);
+B(2) = B(3);
+B(N+4) = B(N+1);
+B(N+3) = B(N+2);
     %% Loop
     for iStep=1:(round(nStep))
         hOld=h;
@@ -93,15 +93,15 @@ B(N+3) = -B(N+2);
     %     ' $\\epsilon =$ %g',tau,a),...
     %     'Interpreter','latex')
     %% h plot1
-    figure(2)
-    for iPlotting = 1:2:nStep
-        clf;
-        plot(x,hplot(i,1) + B(i)')
-        hold on;
-        plot(x,hplot(i,iPlotting)+B(i)','-');
-        finalB = plot(x,B(i),'-.','color','r');
-        pause(.1)
-    end
+%     figure(2)
+%     for iPlotting = 1:2:nStep
+%         clf;
+%         plot(x,hplot(i,1) + B(i)')
+%         hold on;
+%         plot(x,hplot(i,iPlotting)+B(i)','-');
+%         finalB = plot(x,B(i),'-.','color','r');
+%         pause(.1)
+%     end
     %% m plot
     % figure(3)
     % for ip = 1:8:nStep
@@ -115,18 +115,20 @@ B(N+3) = -B(N+2);
     figure(3)
     initialH = plot(x,hplot(i,1) + B(i)','-','color','b');
     hold on;
-    finalH = plot(x,hplot(i,round(nStep))','--');
-    hPlusB = plot(x,hplot(i,round(nStep))+ B(i)','--','color','m');
+    hPlusB.t1 = plot(x,hplot(i,round(nStep/2))+ B(i)'...
+        ,'--','color','k');
+    hPlusB.t2 = plot(x,hplot(i,round(nStep))+ B(i)'...
+        ,'--','color','m');
     finalB = plot(x,B(i),'-.','color','r');
-    legend([initialH,hPlusB,finalH,finalB],...
+    legend([initialH,hPlusB.t1,hPlusB.t2,finalB],...
         't=0, h(x) + B(x)',...
-        sprintf('t=%0.2g, h(x) + B(x)',finalTime),...
-        sprintf('t=%0.2g',finalTime),...
-        'B(x)');
+        sprintf('t=%0.2g, h(x) + B(x)',tau*round(nStep/2)),...
+        sprintf('t=%0.2g, h(x) + B(x)',tau*round(nStep)),...
+        'B(x)','location','best');
     xlabel('x');  ylabel('h(x,t)');
     hold off;
     %%
-    printYesNo = 0;
+    printYesNo = 1;
     if printYesNo == 1
         saveFigurePath = ['/Users/kevin/SkyDrive/KTH Work'...
             '/Period 3 2014/DN2255/Homework/4/HW4-High'...
