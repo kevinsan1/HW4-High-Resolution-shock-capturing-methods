@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 MAY 2014 23:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 MAY 2014 12:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,15 +428,15 @@ df>
 (epstopdf)                    size: 6919 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_80-ep
 s-converted-to.pdf Figures/plot2p1_n_is_80.eps>
-(epstopdf)             \includegraphics on input line 24.
+(epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_80-eps-converted-to.pdf, id=50, 485.815pt x 384.43625pt>
+<Figures/plot2p1_n_is_80-eps-converted-to.pdf, id=58, 485.815pt x 384.43625pt>
 File: Figures/plot2p1_n_is_80-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/plot2p1_n_is_80-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_80-eps-converted-to.pdf used on i
-nput line 24.
+nput line 23.
 (pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
 Package epstopdf Info: Source file: <Figures/plot2p1_n_is_160.eps>
 (epstopdf)                    date: 2014-05-05 16:27:20
@@ -447,14 +447,14 @@ pdf>
 (epstopdf)                    size: 7520 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_160-e
 ps-converted-to.pdf Figures/plot2p1_n_is_160.eps>
-(epstopdf)             \includegraphics on input line 26.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_160-eps-converted-to.pdf, id=51, 485.815pt x 384.43625pt>
+<Figures/plot2p1_n_is_160-eps-converted-to.pdf, id=59, 485.815pt x 384.43625pt>
 File: Figures/plot2p1_n_is_160-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/plot2p1_n_is_160-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_160-eps-converted-to.pdf used on 
-input line 26.
+input line 25.
 (pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
 Package epstopdf Info: Source file: <Figures/plot2p1_n_is_320.eps>
 (epstopdf)                    date: 2014-05-05 16:27:20
@@ -465,14 +465,14 @@ pdf>
 (epstopdf)                    size: 8666 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_320-e
 ps-converted-to.pdf Figures/plot2p1_n_is_320.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_320-eps-converted-to.pdf, id=52, 485.815pt x 384.43625pt>
+<Figures/plot2p1_n_is_320-eps-converted-to.pdf, id=60, 485.815pt x 384.43625pt>
 File: Figures/plot2p1_n_is_320-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/plot2p1_n_is_320-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_320-eps-converted-to.pdf used on 
-input line 28.
+input line 27.
 (pdftex.def)             Requested size: 217.42265pt x 172.05028pt.
  [2 <./Figures/plot2p1_n_is_80-eps-converted-to.pdf> <./Figures/plot2p1_n_is_16
 0-eps-converted-to.pdf> <./Figures/plot2p1_n_is_320-eps-converted-to.pdf>]
@@ -485,15 +485,15 @@ to.pdf>
 (epstopdf)                    size: 7033 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_80_a_
 2-eps-converted-to.pdf Figures/plot2p1_n_is_80_a_2.eps>
-(epstopdf)             \includegraphics on input line 46.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf, id=84, 480.79625pt x 384.436
+<Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf, id=92, 480.79625pt x 384.436
 25pt>
 File: Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf Graphic file (type pdf)
  <use Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_80_a_2-eps-converted-to.pdf used 
-on input line 46.
+on input line 45.
 (pdftex.def)             Requested size: 217.42265pt x 173.85115pt.
 Package epstopdf Info: Source file: <Figures/plot2p1_n_is_160_a_2.eps>
 (epstopdf)                    date: 2014-05-05 16:38:43
@@ -504,16 +504,16 @@ Package epstopdf Info: Source file: <Figures/plot2p1_n_is_160_a_2.eps>
 (epstopdf)                    size: 7691 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_160_a
 _2-eps-converted-to.pdf Figures/plot2p1_n_is_160_a_2.eps>
-(epstopdf)             \includegraphics on input line 48.
+(epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf, id=85, 480.79625pt x 384.43
+<Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf, id=93, 480.79625pt x 384.43
 625pt>
 File: Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf Graphic file (type pdf)
 
  <use Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf used
- on input line 48.
+ on input line 47.
 (pdftex.def)             Requested size: 217.42265pt x 173.85115pt.
 Package epstopdf Info: Source file: <Figures/plot2p1_n_is_320_a_2.eps>
 (epstopdf)                    date: 2014-05-05 16:38:44
@@ -524,21 +524,21 @@ Package epstopdf Info: Source file: <Figures/plot2p1_n_is_320_a_2.eps>
 (epstopdf)                    size: 8921 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/plot2p1_n_is_320_a
 _2-eps-converted-to.pdf Figures/plot2p1_n_is_320_a_2.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf, id=86, 480.79625pt x 384.43
+<Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf, id=94, 480.79625pt x 384.43
 625pt>
 File: Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf Graphic file (type pdf)
 
  <use Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf used
- on input line 50.
+ on input line 49.
 (pdftex.def)             Requested size: 217.42265pt x 173.85115pt.
 )
-(./Sections/Section221.tex) (./Sections/Section222.tex [3 <./Figures/plot2p1_n_
-is_80_a_2-eps-converted-to.pdf> <./Figures/plot2p1_n_is_160_a_2-eps-converted-t
-o.pdf> <./Figures/plot2p1_n_is_320_a_2-eps-converted-to.pdf>]
+(./Sections/Section221.tex [3 <./Figures/plot2p1_n_is_80_a_2-eps-converted-to.p
+df> <./Figures/plot2p1_n_is_160_a_2-eps-converted-to.pdf> <./Figures/plot2p1_n_
+is_320_a_2-eps-converted-to.pdf>]) (./Sections/Section222.tex
 Package epstopdf Info: Source file: <Figures/steadySolutionsp1_n_is_80_a_0.eps>
 
 (epstopdf)                    date: 2014-05-07 23:25:56
@@ -549,41 +549,88 @@ converted-to.pdf>
 (epstopdf)                    size: 7570 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/steadySolutionsp1_
 n_is_80_a_0-eps-converted-to.pdf Figures/steadySolutionsp1_n_is_80_a_0.eps>
-(epstopdf)             \includegraphics on input line 18.
+(epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf, id=113, 480.79625p
+<Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf, id=121, 480.79625p
 t x 383.4325pt>
 File: Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to
-.pdf used on input line 18.
+.pdf used on input line 23.
+(pdftex.def)             Requested size: 321.61024pt x 256.48889pt.
+Package epstopdf Info: Source file: <Figures/critical_c2817_p1_n_is_80_a_0.eps>
+
+(epstopdf)                    date: 2014-05-07 23:50:53
+(epstopdf)                    size: 11441 bytes
+(epstopdf)             Output file: <Figures/critical_c2817_p1_n_is_80_a_0-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2014-05-08 17:51:48
+(epstopdf)                    size: 7610 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/critical_c2817_p1_
+n_is_80_a_0-eps-converted-to.pdf Figures/critical_c2817_p1_n_is_80_a_0.eps>
+(epstopdf)             \includegraphics on input line 29.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/critical_c2817_p1_n_is_80_a_0-eps-converted-to.pdf, id=122, 480.79625p
+t x 383.4325pt>
+File: Figures/critical_c2817_p1_n_is_80_a_0-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use Figures/critical_c2817_p1_n_is_80_a_0-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/critical_c2817_p1_n_is_80_a_0-eps-converted-to
+.pdf used on input line 29.
+(pdftex.def)             Requested size: 321.61024pt x 256.48889pt.
+Package epstopdf Info: Source file: <Figures/critical_c3444_p1_n_is_80_a_0.eps>
+
+(epstopdf)                    date: 2014-05-07 23:56:55
+(epstopdf)                    size: 11450 bytes
+(epstopdf)             Output file: <Figures/critical_c3444_p1_n_is_80_a_0-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2014-05-08 17:51:49
+(epstopdf)                    size: 7652 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/critical_c3444_p1_
+n_is_80_a_0-eps-converted-to.pdf Figures/critical_c3444_p1_n_is_80_a_0.eps>
+(epstopdf)             \includegraphics on input line 35.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/critical_c3444_p1_n_is_80_a_0-eps-converted-to.pdf, id=123, 480.79625p
+t x 383.4325pt>
+File: Figures/critical_c3444_p1_n_is_80_a_0-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use Figures/critical_c3444_p1_n_is_80_a_0-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/critical_c3444_p1_n_is_80_a_0-eps-converted-to
+.pdf used on input line 35.
 (pdftex.def)             Requested size: 321.61024pt x 256.48889pt.
 )
+(./Sections/Section223.tex)
 No file HW4_High_Resolution_shock_capturing_methods.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-[4 <./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+[4 <./Figures/steadySolutionsp1_n_is_80_a_0-eps-converted-to.pdf>] [5 <./Figure
+s/critical_c2817_p1_n_is_80_a_0-eps-converted-to.pdf> <./Figures/critical_c3444
+_p1_n_is_80_a_0-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
 
 (./HW4_High_Resolution_shock_capturing_methods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `HW4_High_Resolution_shock_capturing_methods.
 out' has not changed.
-(rerunfilecheck)             Checksum: E7793CB44168853451D7FA857678844E;1202.
+(rerunfilecheck)             Checksum: 06ED35BD79B7F4F58DEDE466EA5B3584;1721.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 9936 strings out of 493315
- 141945 string characters out of 6137904
- 219668 words of memory out of 5000000
- 13266 multiletter control sequences out of 15000+600000
+ 9960 strings out of 493315
+ 142831 string characters out of 6137904
+ 219872 words of memory out of 5000000
+ 13280 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  29i,16n,28p,538b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -602,11 +649,11 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on HW4_High_Resolution_shock_capturing_methods.pdf (4 pages, 189
-738 bytes).
+Output written on HW4_High_Resolution_shock_capturing_methods.pdf (5 pages, 203
+554 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
