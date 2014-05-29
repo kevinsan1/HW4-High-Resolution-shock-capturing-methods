@@ -19,13 +19,16 @@ dy = dx;
 % Make grid of x and y values
 [X, Y] = meshgrid(-L/2:dx:L/2,-L/2:dy:L/2);
 tFinal = 1.6;
+x=X(1,:);
 dt = dtfraction*dx;
 tSteps = ceil(tFinal/dt);
 ia = 1:n;
 im = [n,1:n-1];
 ip = [2:n,1];
-%% Signed Distance Function
-phi = signedDistance;
+% Signed Distance Function
+w=.2;
+phi = exp(-x.^2/(w^2));
+plot(x,phi)
 %% Define velocity field
 u=-cos(pi*(X+0.5)).*sin(3*pi/8*Y);
 v=sin(pi*(X+0.5)).*cos(3*pi/8*Y);
@@ -53,15 +56,11 @@ tic;
 %% Main loop
 for tn = 1:tSteps
     for i = 2:n-1
-        for j = 2:n-1
-            wxm = phi(i,j) - phi(i-1,j);	% x backward difference
-            wxp = phi(i+1,j) - phi(i,j); 	% x forward difference
-            wym = phi(i,j) - phi(i,j-1); 	% y backward difference
-            wyp = phi(i,j+1) - phi(i,j); 	% y forward difference
-            fx(i,j) = vp(i,j)*wxm + vm(i,j)*wxp;
-            fy(i,j) = up(i,j)*wym + um(i,j)*wyp;
-            phinew(i,j) = phi(i,j)-dt*( fx(i,j)/dx + fy(i,j)/dy );
-        end
+            wxm = phi(i) - phi(i-1);	% x backward difference
+            wxp = phi(i+1) - phi(i); 	% x forward difference
+            fx(i) = vp(i)*wxm + vm(i)*wxp;
+            fy(i) = up(i)*wym + um(i)*wyp;
+            phinew(i) = phi(i)-dt*( fx(i)/dx + fy(i)/dx );
     end
     % Set Boundary Conditions (no flux)
     phinew(1,:) = phinew(2,:);

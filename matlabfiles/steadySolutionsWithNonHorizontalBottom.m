@@ -1,19 +1,19 @@
 %% advect linearization
 clear all;
 clc;
-close all;
+close all force;
 addpath(['/Users/kevin/SkyDrive/KTH Work/Period 3 2014'...
     '/DN2255/Homework/4/HW4-High Resolution shock-capturing'...
     ' methods/matlabfiles/']);
 %% Parameters
-N = 100;
+N = 50;
 L = 1.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
 c = sqrt(g*H); % Wave speed
 tau = .8*dx/c; % Time Step
-coeff = -tau/(2*dx);
+coeff = -tau/(c*dx);
 nStep = L/(c*tau); % waves
 finalTime = nStep*tau;
 nCells = 1:N;
@@ -21,7 +21,7 @@ x = dx/2:dx:L;
 %% Boundary Conditions
 w = 0.1*L; % Width
 a = 1/5*H;
-h = a*exp(-(x-L/2).^2/(w^2));
+h = 1+a*exp(-(x-L/2).^2/(w^2));
 m = 0*h;
 %% Record the initial state
 hplot(:,1) = h(:);
@@ -36,27 +36,46 @@ for ib = 1:length(x)
         B(ib)=0;
     end
 end
+myHandle = waitbar(0,'Initializing waitbar...');
+tic
 %% Loop
 for tstep= 1:(round(nStep))
     hp=h;
     mp=m;
-    f = (1/2*g*hp.^2 + (mp.^2)./hp);
+    Q = [hp;mp];
+    f = [ mp;
+        1/2*g*hp.^2 + (mp.^2)./hp];
+    uhat = (sqrt(mp)./hp([1,1:N-1]) +...
+        sqrt(mp).*mp./hp)./(sqrt(hp([1,1:N-1])) + sqrt(hp));
+    hh = (hp([1,1:N-1]) + hp)/2;
+    Am = [-sqrt(g*h)+m; -sqrt(g*h) + m];
+    Ap = [-sqrt(g*h)+m; -sqrt(g*h) + m];
+    Fp = 1/2*(f + f(:,[1,1:N-1])) - 1/2*abs(Ap).*(Q(:,[2:N,N])-Q(:,:));
+    Fm = 1/2*(f + f(:,[1,1:N-1])) - 1/2*abs(Am).*(Q(:,[2:N,N])-Q(:,:));
     
-    for i = 2:(N-1)
-        F = 1/2*(f(i) + f(i+1)) - 1/2*()
-        hp(i) = .5*(hp(i+1)+ hp(i-1))...
-            - abs(coeff)*(m(i+1) - m(i-1));
-        mp(i) = .5*(mp(i+1)+ mp(i-1))...
-            - abs(coeff)*(f(i+1) - f(i-1));
+    for i = 2:N-1
+        Qn(:,i) = Q(:,i) - tau/dx*(Fp(i+1) - Fm(i-1));
     end
-    hp(1) = hp(2);
-    mp(1) = mp(2)*(-1);
-    hp(N) = hp(N-1);
-    mp(N) = mp(N-1)*(-1);
+    Qn(1,1) = Qn(1,2);
+    Qn(2,1) = Qn(2,2)*(-1);
+    Qn(1,N) = Qn(1,N-1);
+    Qn(2,N) = Qn(2,N-1)*(-1);
+    hp = Qn(1,:);
+    mp = Qn(2,:);
     hplot(:,(tstep+1)) = hp(:);
     mplot(:,(tstep+1)) = mp(:);
     h=hp;
     m=mp;
+    %% Here's the progress bar code
+    time=toc;
+    Perc=tstep/(round(nStep));
+    Trem=time/Perc-time; %Calculate the time remaining
+    Hrs=floor(Trem/3600);Min=floor((Trem-Hrs*3600)/60);
+    waitbar(Perc,myHandle,[sprintf('%0.1f',Perc*100) '%, '...
+        sprintf('%03.0f',Hrs) ':'...
+        sprintf('%02.0f',Min) ':'...
+        sprintf('%02.0f',rem(Trem,60)) ' remaining Level Set Method']);
+    
 end
 
 %% Plot
@@ -84,7 +103,7 @@ for ip = 1:8:nStep
     hold on;
     plot(x,hplot(:,ip),'-');
     hold off;
-    pause(.1)
+    pause(1)
 end
 %% Plot for 2.1
 % figure(3)
@@ -112,5 +131,5 @@ end
 %     print('-depsc2', [saveFigurePath ...
 %         sprintf('steadySolutionsp%g_n_is_%g_a_%g',H,N,round(a))]);
 % end
-% 
-% 
+%
+%

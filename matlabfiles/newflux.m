@@ -27,7 +27,7 @@ m = 0*h;
 hplot(:,1) = h(:);
 mplot(:,1) = m(:);
 f = (1/2*g*h.^2 + (m.^2)./h);
-%% Change of Variables
+% Change of Variables
 q1 = h;
 q2 = m;
 q = [q1; q2];
@@ -75,6 +75,7 @@ uhat = Z2./Z1;
 u = m./h;
 uhat2 = (sqrt(h(im)).*u(im) + sqrt(h))./...
     (sqrt(h(im)) + sqrt(h));
+Am3 = Cm*Bm'
 Am2 = [zeros(1,N), ones(1,N);
         -uhat.^2 + g*htilde, 2*uhat];
     isequal(Am2,Am)
@@ -91,20 +92,37 @@ alpha(2,:) = (-(uhat - chat).*D(1,:) - D(2,:))./(2*chat);
 W1 = alpha(1,:).*rhat1;
 W2 = alpha(2,:).*rhat2;
 itest = 2;
-fQ = [q(2,:); q(2,:).^2./q(1,:) + 1/2*g*(q(1,:)).^2];
+fQ1 = q(2,:);
+fQ2 = q(2,:).^2./q(1,:) + 1/2*g*(q(1,:)).^2;
+htilde = 1/2*(h(im) + h);
+chat = sqrt(g*htilde);
 for itest = 2:(N-1)
-    Flux = 1/2 * (fQ(itest-1) + fQ(itest+1)) - ...
+    u(itest) = m(itest)./h(itest);
+    uhat2(itest) = (sqrt(h(itest-1)).*u(itest-1) + ...
+        sqrt(h(itest)))./...
+        (sqrt(h(itest)) + sqrt(h(itest)));
+    lambdahat1(itest) = uhat2(itest)-chat(itest);
+    lambdahat2(itest) = uhat2(itest)+chat(itest);
+    Flux1(itest,:) = 1/2 * (fQ1(itest) + fQ1(itest+1)) - ...
+    1/2*(lambdahat(1,itest)*W1 + lambdahat(2,itest)*W2);
+    Flux2(itest,:) = 1/2 * (fQ2(itest) + fQ2(itest+1)) - ...
     1/2*(lambdahat(1,itest)*W1 + lambdahat(2,itest)*W2);
 end
+Flux1(1,:) = Flux1(2,:);
+Flux1(N,:) = Flux1(N-1,:);
+Flux2(1,:) = Flux2(2,:);
+Flux2(N,:) = Flux2(N-1,:);
 %%
-Flux(1,:) = Flux(2,:);
-Flux(N,:) = Flux(N-1,:);
+    Flux = 1/2 * (fQ(itest) + fQ(itest+1)) - ...
+    1/2*(lambdahat(1,itest)*W1 + lambdahat(2,itest)*W2);
+
 %%
 Flux = 1/2 * (fQ(im) + fQ(ip)) - ...
     1/2*(lambdahat(1,:).*W1 + lambdahat(2,:).*W2);
 Q = [q1;q2];
 Qn(1:2,1:N,1) = Q;
 %%
+
 for ttest = 1:10
    Qn(1:2,2:(N-1),ttest+1) = Q(1:2,2:(N-1)) + ...
        tau/dx * (Flux(3:N) - Flux(1:(N-2)))
