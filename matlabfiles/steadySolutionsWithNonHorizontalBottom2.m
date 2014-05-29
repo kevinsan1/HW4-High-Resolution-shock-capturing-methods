@@ -12,7 +12,7 @@ L = 10.;
 dx = L/N; % Grid spacing
 H = 1;
 g = 9.8;
-c = sqrt(g*H); % Wave speed
+c = sqrt(g*H+1); % Wave speed
 tau = .85*dx/c; % Time Step
 coeff = -tau/(dx);
 nStep = L/(c*tau);
@@ -28,7 +28,7 @@ h = H + a*exp(-(x-L/2).^2/(w^2));
 h = padarray(h',ghostCellOneSide)';
 % Boundary Conditions
 % m=h;
-m = 1*a*exp(-(x-L/2).^2/(w^2))*c;
+m = 0*a*exp(-(x-L/2).^2/(w^2))*c;
 m = padarray(m',ghostCellOneSide)';
 %% BC
 % needs to be changed if ghostCellOneSide is changed
@@ -93,24 +93,24 @@ B(N+3) = B(N+2);
     %     ' $\\epsilon =$ %g',tau,a),...
     %     'Interpreter','latex')
     %% h plot1
-    figure(2)
-    for iPlotting = 1:2:nStep
-        clf;
-        plot(x,hplot(i,1) + B(i)')
-        hold on;
-        plot(x,hplot(i,iPlotting)+B(i)','-');
-        finalB = plot(x,B(i),'-.','color','r');
-        title('h')
-        pause(.1)
-    end
+%     figure(2)
+%     for iPlotting = 1:2:nStep
+%         clf;
+%         plot(x,hplot(i,1) + B(i)')
+%         hold on;
+%         plot(x,hplot(i,iPlotting)+B(i)','-');
+%         finalB = plot(x,B(i),'-.','color','r');
+%         title('h')
+%         pause(.1)
+%     end
     %% m plot
     figure(3)
     for ip = 1:2:nStep
         clf;
-        plot(x,mplot(i,1))
-        hold on;
-        plot(x,mplot(i,ip),'-');
-        pause(.1)
+        plot(x,abs(mplot(i,ip)./hplot(i,ip)),x,sqrt(g*hplot(i,ip)))
+%         axis([0 10 -.4 .4]);
+        legend('|u(x)|','characteristic speed','location','best');
+        pause(.01)
     end
     %% Plot for 2.1
 %     figure(3)
