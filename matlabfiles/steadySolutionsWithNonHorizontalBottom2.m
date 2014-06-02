@@ -102,64 +102,44 @@ for iStep=1:(round(nStep))
     uhat(2) = uhat(3)*(-1);
     h=hn;
     m=mn;
-    Q = [h;m];
     u = m./h;
+    Qplot(:,:,iStep+1) = Qn;
+    Q = Qn;
     hplot(:,(iStep+1)) = hn(:);
     mplot(:,(iStep+1)) = mn(:);
 end
-
 %% Plot
-% figure(1); clf;
-% plot(x,hplot(i,1),'-',x,hplot(i,nStep),'--');
-% legend('t=0','t=1');
-% xlabel('x');  ylabel('h(x,t)');
-% title(sprintf('$h(x,t)$ $\\Delta t=$%0.2g,',...
-%     ' $\\epsilon =$ %g',tau,a),...
-%     'Interpreter','latex')
-%% h plot1
-%     figure(2)
-%     for iPlotting = 1:2:nStep
-%         clf;
-%         plot(x,hplot(i,1) + B(i)')
-%         hold on;
-%         plot(x,hplot(i,iPlotting)+B(i)','-');
-%         finalB = plot(x,B(i),'-.','color','r');
-%         title('h')
-%         pause(.1)
-%     end
-
-%% m plot
-% figure(3)
-% for ip = 1:2:nStep
-%     clf;
-%     plot(x,abs(mplot(i,ip)./hplot(i,ip)),x,sqrt(g*hplot(i,ip)))
-%     %         axis([0 10 -.4 .4]);
-%     legend('|u(x)|','characteristic speed','location','best');
-%     pause(.01)
-% end
-%% Plot for 2.1
-%     figure(3)
-%     initialH = plot(x,hplot(i,1) + B(i)','-','color','b');
-%     hold on;
-%     hPlusB.t1 = plot(x,hplot(i,round(nStep/2))+ B(i)'...
-%         ,'--','color','k');
-%     hPlusB.t2 = plot(x,hplot(i,round(nStep))+ B(i)'...
-%         ,'--','color','m');
-%     finalB = plot(x,B(i),'-.','color','r');
-%     legend([initialH,hPlusB.t1,hPlusB.t2,finalB],...
-%         't=0, h(x) + B(x)',...
-%         sprintf('t=%0.2g, h(x) + B(x)',tau*round(nStep/2)),...
-%         sprintf('t=%0.2g, h(x) + B(x)',tau*round(nStep)),...
-%         'B(x)','location','best');
-%     xlabel('x');  ylabel('h(x,t)');
-%     hold off;
-%     %%
-%     printYesNo = 0;
-%     if printYesNo == 1
-%         saveFigurePath = ['/Users/kevin/SkyDrive/KTH Work'...
-%             '/Period 3 2014/DN2255/Homework/4/HW4-High'...
-%             ' Resolution shock-capturing methods/Figures/'];
-%         set(figure(3), 'PaperPositionMode', 'auto');
-%         print('-depsc2', [saveFigurePath ...
-%             sprintf('steadySolutionsp%g_n_is_%g_a_%g',H,N,round(a))]);
-%     end
+for n = 1:95
+    figure(1);clf;
+    plot(x,hplot(gi,1),x,hplot(gi,n))
+    hold on;
+    % hTitle, hXLabel, hYLabel
+    hTitle = title(sprintf('Title'));
+    hXLabel = xlabel('x');
+    hYLabel = ylabel('y');
+    hLegend = legend('Initial',sprintf('t=%0.2f',n*tau));
+    % Configuration
+    set( gca                       , ...
+        'FontName'   , 'Helvetica' );
+    set([hTitle, hXLabel, hYLabel,hLegend], ...
+        'FontName'   , 'AvantGarde');
+    set( gca             , ...
+        'FontSize'   , 8           );
+    set([hXLabel, hYLabel,hLegend]  , ...
+        'FontSize'   , 10          );
+    set( hTitle                    , ...
+        'FontSize'   , 12          , ...
+        'FontWeight' , 'bold'      );
+    set(gca, ...
+        'Box'         , 'off'         , ...
+        'TickDir'     , 'out'         , ...
+        'TickLength'  , [.02 .02]     , ...
+        'XMinorTick'  , 'on'          , ...
+        'YMinorTick'  , 'on'          , ...
+        'XColor'      , [.3 .3 .3]    , ...
+        'YColor'      , [.3 .3 .3]    , ...
+        'ZColor'      , [.3 .3 .3]    , ...
+        'LineWidth'   , 1             );
+    hold off;
+    pause(0.001);
+end
