@@ -9,12 +9,11 @@ addpath(['/Users/kevin/SkyDrive/KTH Work/Period 3 2014'...
 %% Parameters
 N = 80;
 L = 10.;
-dx = L/N; % Grid spacing
+dx = L/(N); % Grid spacing
 H = 1;
 g = 9.8;
-c = sqrt(g*H+1); % Wave speed
-tau = .85*dx/c; % Time Step
-coeff = -tau/(dx);
+c = sqrt(g*H); % Wave speed
+tau = .8*dx/c; % Time Step
 nStep = L/(c*tau);
 finalTime = nStep*tau;
 nCells = 1:N;
@@ -24,7 +23,7 @@ gi = (1:N) + 2;
 %% Boundary Conditions
 w = 0.1*L; % Width
 x = (nCells-1/2)*dx; % Grid points
-a = 1/10*H;
+a = 1/5*H;
 h = H + a*exp(-(x-L/2).^2/(w^2));
 h = padarray(h,[0,2]); % add 2 ghost cells on both sides
 % Boundary Conditions
@@ -42,7 +41,8 @@ h(N+3) = h(N+2);
 m(N+4) = m(N+1)*(-1);
 m(N+3) = m(N+2)*(-1);
 u = m./h;
-Q = [h;m];
+Q = [h; m];
+Qplot(:,:,1) = Q;
 uhat(gi) = (sqrt(h(gi-1)).*u(gi-1) + sqrt(h(gi)))/...
     (sqrt(h(gi-1)) + sqrt(h(gi)));
 uhat(N+4) = uhat(N+1)*(-1);
@@ -50,9 +50,6 @@ uhat(N+3) = uhat(N+2)*(-1);
 uhat(1) = uhat(4)*(-1);
 uhat(2) = uhat(3)*(-1);
 %% Record the initial state
-hplot(:,1) = h(:);
-mplot(:,1) = m(:);
-fs = (1/2*g*h.^2 + (m.^2)./h);
 r = L/6;
 B0 = H/10;
 for lengthOfX = 1:length(x)
@@ -71,53 +68,57 @@ B(N+3) = B(N+2);
 for iStep=1:(round(nStep))
     fs = (1/2*g*h.^2 + (m.^2)./h);
     f = [m; fs];
-    for i = 3:(N+2) % 2 ghost cells on each end 1,2 and N+3,N+4
+    for i = 3:(N+2) % 2 ghost cells on each end: 1,2 and N+3,N+4
         Am = [0,1;-uhat(i-1)^2 + g*h(i-1), 2*uhat(i-1)];
         Ap = [0,1;-uhat(i+1)^2 + g*h(i+1), 2*uhat(i+1)];
-        Fip = 1/2*(f(:,i) + f(:,i+1)) - ...
-            1/2*abs(Ap)*(Q(:,i+1) - Q(:,i));
-        Fim = 1/2*(f(:,i) + f(:,i-1)) - ...
-            1/2*abs(Am)*(Q(:,i-1) - Q(:,i));
-        Qn(:,i) = Q(:,i) + tau/dx*(Fip - Fim);
-        flux = (1/2*g*h.^2 + (m.^2)./h);
-        hn(i) = .5*(h(i+1)+ h(i-1))...
-            - 1/2*abs(coeff)*(m(i+1) - m(i-1));
-        mn(i) = .5*(m(i+1)+ m(i-1))...
-            - 1/2*abs(coeff)*(flux(i+1) - flux(i-1)...
-            + g*hn(i).*(B(i+1) - B(i-1)) );
+        Fip = 1/2*(f(:,i) + f(:,i+1)) ...
+		- 1/2*abs(Ap)*(Q(:,i+1) - Q(:,i));
+        Fim = 1/2*(f(:,i-1) + f(:,i)) ...
+		- 1/2*abs(Am)*(Q(:,i) - Q(:,i-1));
+        Qn(:,i) = Q(:,i) - tau/dx*(Fip - Fim)...
+            + tau*[0;(g*Q(1,i)*(B(i)-B(i-1)))];
     end
-    hn(1) = hn(4);
-    hn(2) = hn(3);
-    mn(1) = mn(4)*(-1);
-    mn(2) = mn(3)*(-1);
-    hn(N+4) = hn(N+1);
-    hn(N+3) = hn(N+2);
-    mn(N+4) = mn(N+1)*(-1);
-    mn(N+3) = mn(N+2)*(-1);
-    uhat(gi) = (sqrt(h(gi-1)).*u(gi-1) + sqrt(h(gi)))/...
-        (sqrt(h(gi-1)) + sqrt(h(gi)));
+    % Boundary Conditions
+    Qn(1,1) = Qn(1,4); 		% h(1) = h(4)
+    Qn(1,2) = Qn(1,3); 		% h(2) = h(3)
+    Qn(2,1) = Qn(2,4)*(-1); % m(1) = -m(4)
+    Qn(2,2) = Qn(2,3)*(-1); % m(2) = -m(3)
+    Qn(1,N+4) = Qn(1,N+1);		% h(N+4) =  h(N+1)
+    Qn(1,N+3) = Qn(1,N+2);      % h(N+3) =  h(N+2)
+    Qn(2,N+4) = Qn(2,N+1)*(-1); % m(N+4) = -m(N+1)
+    Qn(2,N+3) = Qn(2,N+2)*(-1); % m(N+3) = -m(N+2)
+    u = Qn(2,:)./Qn(1,:);
+    h = Qn(1,:);
+    m = Qn(2,:);
+    uhat(gi) = (sqrt(Q(1,gi-1)).*u(gi-1) + sqrt(Qn(1,gi)))/...
+        (sqrt(Qn(1,gi-1)) + sqrt(Qn(1,gi)));
     uhat(N+4) = uhat(N+1)*(-1);
     uhat(N+3) = uhat(N+2)*(-1);
     uhat(1) = uhat(4)*(-1);
     uhat(2) = uhat(3)*(-1);
-    h=hn;
-    m=mn;
-    u = m./h;
+    % Save Q for plot
     Qplot(:,:,iStep+1) = Qn;
     Q = Qn;
-    hplot(:,(iStep+1)) = hn(:);
-    mplot(:,(iStep+1)) = mn(:);
+    % Stop loop when Q is NaN or greater than 2
+    if isnan(Q)
+        fprintf('iStep = %f\nt=%0.2f\n',iStep,iStep*tau);
+        return;
+    elseif Q(1,50)>2
+        fprintf('iStep = %f\nt=%0.2f\nGreater\n',iStep,iStep*tau);
+        return;
+    end
 end
 %% Plot
-for n = 1:95
+X = padarray(x,[0,2]);
+for n = 1:5:iStep
     figure(1);clf;
-    plot(x,hplot(gi,1),x,hplot(gi,n))
+    plot(X,Qplot(1,:,1),X,Qplot(1,:,n))
     hold on;
     % hTitle, hXLabel, hYLabel
     hTitle = title(sprintf('Title'));
     hXLabel = xlabel('x');
     hYLabel = ylabel('y');
-    hLegend = legend('Initial',sprintf('t=%0.2f',n*tau));
+    hLegend = legend('Initial',sprintf('t=%0.2f',n*tau),'B(x)');
     % Configuration
     set( gca                       , ...
         'FontName'   , 'Helvetica' );
@@ -141,5 +142,5 @@ for n = 1:95
         'ZColor'      , [.3 .3 .3]    , ...
         'LineWidth'   , 1             );
     hold off;
-    pause(0.001);
+    pause(0.001)
 end
